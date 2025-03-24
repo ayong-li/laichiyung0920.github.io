@@ -1,61 +1,71 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>聯絡我｜賴奇勇</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聯絡資訊｜賴奇勇</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: "Microsoft JhengHei", sans-serif;
+      font-family: 'Microsoft JhengHei', sans-serif;
       background-color: #fff8f2;
     }
     .section-title {
-      text-align: center;
-      margin: 40px 0 20px;
       color: #a10e0e;
-    }
-    .map-container, .store-info {
+      margin-top: 40px;
+      margin-bottom: 20px;
       text-align: center;
-      margin-bottom: 40px;
+    }
+    .contact-info ul {
+      list-style: none;
+      padding: 0;
+    }
+    .contact-info li {
+      margin-bottom: 10px;
     }
     .store-photo {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-top: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    a {
-      color: #a10e0e;
+      width: 100%;
+      max-width: 700px;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      margin: 20px auto;
+      display: block;
     }
     footer {
       background-color: #a10e0e;
       color: white;
       text-align: center;
       padding: 20px;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
   <div class="container py-5">
-    <h2 class="section-title">📍 店面位置地圖</h2>
-    <div class="map-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      <br />
-      <a href="https://www.google.com/maps/dir/?api=1&destination=台北市松山區民生東路四段130號" target="_blank" class="btn btn-outline-danger mt-3">➡️ 點我導航到現場</a>
+    <h1 class="section-title">📍 聯絡與營業資訊</h1>
+
+    <div class="ratio ratio-16x9 mb-4">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.625632389979!2d121.55379607609558!3d25.058730937925076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdc7927ee3f%3A0x57a15d93a99bff58!2z5aSn5a245a-25Lit5b-D6Zm95Lit5b-D6ZaA5YyX6KW_5bel56iL5a245bq35ZyL56uZ5p2x5Y2A5rCR5b6M6LevMTMw6Jmf!5e0!3m2!1szh-TW!2stw!4v1713525556223!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
-    <h2 class="section-title">🕒 營業資訊</h2>
-    <div class="store-info">
-      <p>🏠 地址：台北市松山區民生東路四段130號（光復北路口）</p>
-      <p>🕘 營業時間：週一至週日 9:00 - 22:00</p>
-      <p>🅿️ 停車建議：民生東路地下停車場、路邊停車格</p>
-      <img src="store.jpg" alt="店面外觀" class="store-photo" />
+    <div class="text-center mb-4">
+      <a href="https://maps.google.com/?q=台北市松山區民生東路四段130號" target="_blank" class="btn btn-danger">🚗 點我導航</a>
     </div>
+
+    <div class="contact-info text-center">
+      <ul>
+        <li><strong>🏠 地址：</strong>台北市松山區民生東路四段130號（光復北路口）</li>
+        <li><strong>📞 電話：</strong>0920-870-278</li>
+        <li><strong>🕘 營業時間：</strong>週一至週日 09:00–22:00</li>
+        <li><strong>🅿️ 停車建議：</strong>敦化北路圓環地下停車場、民生光復路口停車格</li>
+      </ul>
+    </div>
+
+    <img src="store-front.jpg" alt="店面照片" class="store-photo">
   </div>
 
   <footer>
-    © 2025 賴奇勇｜大師房屋 敦北民生加盟營業處
+    © 2025 <strong style="color: #007bff;">賴奇勇</strong>｜大師房屋 敦北民生加盟營業處
   </footer>
 </body>
 </html>
