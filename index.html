@@ -5,146 +5,250 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="18年的房仲經驗 | 用家人的心陪您買賣房屋">
   <title>大師房屋敦北民生加盟營業處 賴奇勇</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.17/dist/css/uikit.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.20/css/uikit.min.css" />
   <style>
-    body { font-family: 'Microsoft JhengHei', sans-serif; }
-    .uk-navbar-container { background: #000; height: 50px; }
-    .navbar-logo { height: 40px; margin-right: 10px; }
-    .navbar-name { font-weight: bold; font-size: 18px; color: white; }
-    .nav-search input { background-color: #cdb15b; border: none; color: white; padding: 4px; }
-    .highlight-title { color: #866a13; text-align: center; font-size: 28px; font-weight: bold; margin-top: 30px; }
-    .highlight-subtitle { text-align: center; font-size: 18px; }
-    .contact-bar { background-color: #34586e; color: #cdb15b; padding: 10px 150px; display: flex; justify-content: space-between; }
-    .profile-box { display: flex; margin-top: 50px; align-items: flex-start; }
-    .profile-img { width: 300px; height: 300px; object-fit: cover; }
-    .profile-info { margin-left: 400px; font-size: 18px; }
-    .carousel-frame { background-color: #eee; padding: 10px; margin-top: 40px; }
-    .section-title { background-color: #34586e; color: white; padding: 10px; font-size: 20px; }
-    h1.centered { text-align: center; color: #9f1120; margin-top: 40px; }
-    .rounded-img { width: 300px; height: 300px; border-radius: 50%; object-fit: cover; }
-    footer { background: #000; color: white; margin-top: 60px; }
+    body {
+      font-family: 'Microsoft JhengHei', sans-serif;
+    }
+    nav {
+      background-color: black;
+      height: 50px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+    nav img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    nav .left {
+      display: flex;
+      align-items: center;
+    }
+    nav .right a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    nav .right input[type="search"] {
+      background-color: #cdb15b;
+      border: none;
+      padding: 5px;
+    }
+    .logo-section {
+      margin-top: 60px;
+      text-align: center;
+    }
+    h1 {
+      color: #866a13;
+      font-size: 28px;
+      text-align: center;
+    }
+    .contact-section {
+      display: flex;
+      align-items: center;
+      margin: 50px;
+    }
+    .contact-section img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+    }
+    .contact-info {
+      margin-left: 100px;
+      font-size: 18px;
+    }
+    .highlight-box {
+      background-color: #34586e;
+      color: #cdb15b;
+      padding: 20px;
+      margin: 150px 40px 40px;
+      font-size: 20px;
+    }
+    .uk-slider-items img {
+      border: 5px solid #eee;
+      transition: transform 0.3s;
+    }
+    .uk-slider-items img:hover {
+      transform: scale(1.02);
+    }
+    .center-title {
+      text-align: center;
+      font-size: 24px;
+      color: #9f1120;
+      margin: 40px 0;
+    }
+    .section {
+      padding: 40px;
+    }
+    .section h2 {
+      background-color: #34586e;
+      color: #cdb15b;
+      padding: 10px;
+    }
+    .footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
   </style>
 </head>
 <body>
 
-<nav class="uk-navbar-container" uk-navbar>
-  <div class="uk-navbar-left">
-    <a href="index.html" class="uk-navbar-item uk-logo">
-      <img src="profile.jpg" class="navbar-logo" alt="賴奇勇">
-      <span class="navbar-name">賴奇勇</span>
+  <nav>
+    <div class="left">
+      <a href="index.html">
+        <img src="profile.jpg" alt="賴奇勇">
+        <strong style="color:white; font-weight:bold;">賴奇勇</strong>
+      </a>
+    </div>
+    <div class="right">
+      <a href="index.html">首頁</a>
+      <a href="testimonials.html">客戶這樣說</a>
+      <a href="resume.html">自我介紹</a>
+      <a href="社區介紹.html">社區介紹</a>
+      <a href="realpricelogin.html">時價登錄</a>
+      <a href="買賣房注意事項.html">買賣房注意事項</a>
+      <a href="contact.html">地圖</a>
+      <input name="searchword" placeholder="搜尋" type="search" class="uk-search-input" title="搜尋 賴奇勇">
+    </div>
+  </nav>
+
+  <div class="logo-section">
+    <img src="logo.png" alt="公司LOGO">
+  </div>
+
+  <h1>找房子、賣屋，找對人最重要</h1>
+  <div class="contact-section">
+    <img src="profile.jpg" alt="賴奇勇">
+    <div class="contact-info">
+      <p><strong style="font-size:20px;">聯絡我: 賴奇勇</strong></p>
+      <p>地址: 台北市松山區民生東路四段130號</p>
+      <p>手機: <a href="tel:0920870278">0920870278</a></p>
+      <p><a href="https://line.me/ti/p/N0aCOzISyY">加入LINE一對一聯繫</a></p>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <h2>若您有任何房地產的問題，歡迎與我聯繫 📞0920-870278 賴奇勇</h2>
+  </div>
+
+  <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+    <ul class="uk-slider-items uk-child-width-1-1">
+      <li><img src="保留1.jpg" width="1170" height="658" alt="保留1"></li>
+      <li><img src="保留2.jpg" width="1170" height="658" alt="保留2"></li>
+      <li><img src="保留3.jpg" width="1170" height="658" alt="保留3"></li>
+      <li><img src="保留4.jpg" width="1170" height="658" alt="保留4"></li>
+      <li><img src="保留5.jpg" width="1170" height="658" alt="保留5"></li>
+    </ul>
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slider-item="previous">
+      <svg width="19" height="16" viewBox="0 0 19 16" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#000" stroke-width="2" d="M8.8 1.5L1.8 8l7 6.5"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M19 7H3v2h16z"></path></svg>
+    </a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slider-item="next">
+      <svg width="19" height="16" viewBox="0 0 19 16" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#000" stroke-width="2" d="M10.2 1.5l7 6.5-7 6.5"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M0 7h16v2H0z"></path></svg>
     </a>
   </div>
-  <div class="uk-navbar-right">
-    <ul class="uk-navbar-nav">
-      <li><a href="index.html">首頁</a></li>
-      <li><a href="testimonials.html">客戶這樣說</a></li>
-      <li><a href="resume.html">自我介紹</a></li>
-      <li><a href="社區介紹.html">社區介紹</a></li>
-      <li><a href="realpricelogin.html">時價登錄</a></li>
-      <li><a href="買賣房注意事項.html">買賣房注意事項</a></li>
-      <li><a href="contact.html">地圖</a></li>
-      <li class="nav-search">
-        <input name="searchword" placeholder="搜尋" type="search" class="uk-search-input">
-      </li>
+
+  <div class="section">
+    <p>你是否也曾擔心：「仲介會不會只是為了成交？」我了解，房地產交易不是單純的買賣，而是人生一個重要的決定。所以，我始終用家人的心態對待每一位客戶。</p>
+  </div>
+
+  <div class="center-title">
+    我在乎的，不只是成交 是您的安心
+  </div>
+
+  <div class="section">
+    <p>我叫賴奇勇或是叫我阿勇，從民國96年從嘉義水上北上開始投入房仲業，走過房地產許多波動(次貸風暴、全球金融海嘯、QE 資金潮、奢侈稅上路、房地合一稅醞釀、實施、中美貿易戰 、COVID-19疫情 + 資金寬鬆 + 利率超低)，歷經市場高低起伏，服務超過300位圓滿成家，包含律師、醫師、工程師、會計師等。我深知每位客戶的需求都不一樣，但不變的是：「想找到一位值得信任的房地產顧問。」</p>
+  </div>
+
+  <div class="section">
+    <h2>💡 為什麼選擇我？</h2>
+    <ul>
+      <li>✅ １８年經驗＋專業訓練 不論您是買房、賣屋、投資、租賃，我都能提供一條龍式的全程服務。</li>
+      <li>✅我不是說術語給您聽，而是把專業轉成您聽得懂的「實話」，幫您安心決策。</li>
+      <li>✅ 數位行銷超強曝光力 我擁有完整的網路行銷策略團隊，不只是放591、樂屋，更投入FB、Google、YouTube、IG廣告與專業影片製作。</li>
+      <li>✅物件會經過行銷分析與受眾鎖定，讓廣告不亂丟而是精準出擊！</li>
+      <li>✅ 快速配對買方系統 若您要賣屋，我會將物件輸入數據配對系統，立即對應潛在買家名單，並同步推送給登記過的指定買方，大幅提高成交效率。</li>
+      <li>✅ 講稅金、講行情，用最白話的方式 什麼是房地合一？增值稅怎麼算？裝潢會被課稅嗎？</li>
+      <li>✅您問的每一題，我都會用「您聽得懂的方式」說給您聽，稅務計算、節稅建議，我都會親自協助，不讓您多付冤枉錢。</li>
     </ul>
   </div>
-</nav>
 
-<div class="uk-text-center uk-margin-top">
-  <img src="logo.png" alt="公司LOGO">
-</div>
-
-<h1 class="highlight-title">找房子、賣屋，找對人最重要</h1>
-<p class="highlight-subtitle">大師房屋敦北民生加盟營業處 副店長 賴奇勇<br>
-<span id="experience-years"></span>的房屋仲介實戰經驗，站在您這邊的貼心顧問用家人的心陪您買賣房屋</p>
-
-<div class="contact-bar">
-  <div>若您有任行房地產的問題，歡迎與我聯繫</div>
-  <div>賴奇勇 📞0920-870278</div>
-</div>
-
-<div class="profile-box">
-  <img src="profile.jpg" class="profile-img" alt="賴奇勇">
-  <div class="profile-info">
-    <p><strong>聯絡我:</strong> 賴奇勇</p>
-    <p>地址: 台北市松山區民生東路四段130號</p>
-    <p>手機: <a href="tel:0920870278">0920-870278</a></p>
-    <p><a href="https://line.me/ti/p/N0aCOzISyY" target="_blank">加入LINE</a></p>
+  <div class="highlight-box">
+    <h2>若您有任何房地產的問題，歡迎與我聯繫 📞0920-870278 賴奇勇</h2>
   </div>
-</div>
 
-<div class="uk-position-relative uk-visible-toggle uk-light carousel-frame" uk-slider>
-  <ul class="uk-slider-items uk-child-width-1-1">
-    <li><img src="保留1.jpg" alt="保留1" width="1170" height="658"></li>
-    <li><img src="保留2.jpg" alt="保留2"width="1170" height="658"></li>
-    <li><img src="保留3.jpg" alt="保留3"width="1170" height="658"></li>
-    <li><img src="保留4.jpg" alt="保留4"width="1170" height="658"></li>
-    <li><img src="保留5.jpg" alt="保留5"width="1170" height="658"></li>
-  </ul>
-  <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-  <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
-</div>
-
-<h1 class="centered">我在乎的，不只是成交 是您的安心</h1>
-<p class="uk-padding">我叫賴奇勇或是叫我阿勇，從民國96年從嘉義水上北上開始投入房仲業，走過房地產許多波動……</p>
-
-<h2 class="section-title">💡 為什麼選擇我？</h2>
-<ul class="uk-list uk-list-bullet uk-padding">
-  <li>✅ １８年經驗＋專業訓練，全程服務</li>
-  <li>✅ 把專業變成實話說給您聽</li>
-  <li>✅ 數位行銷強曝光＋精準受眾</li>
-  <li>✅ 快速配對買方系統</li>
-  <li>✅ 稅金白話解釋＋節稅協助</li>
-</ul>
-
-<h2 class="section-title">我們能幫您做什麼？</h2>
-<p class="uk-padding">我們的店面就在民生東路四段與光復北路口，三角窗黃金地段……</p>
-
-<h2 class="section-title">賣屋服務</h2>
-<ul class="uk-list uk-list-bullet uk-padding">
-  <li>✅免費不動產估價</li> 
-  <li>✅土地增值稅概算</li> 
-  <li>✅房地合一稅分析</li>
-  <li>✅專業影片、社群廣告曝光</li> 
-  <li>✅潛在買方即時配對</li>
-  <li>✅稅費試算、過戶協助</li>
-</ul>
-
-<h2 class="section-title">買屋服務</h2>
-<ul class="uk-list uk-list-bullet uk-padding">
-  <li>✅智慧找房快速配對</li> 
-  <li>✅即時通知</li> 
-  <li>✅LINE 傳送完整物件</li>
-  <li>✅行情分析＋報告</li> 
-  <li>✅預算建議＋稅金試算</li>
-</ul>
-
-<div class="uk-flex uk-padding">
-  <img src="profile.jpg" alt="賴奇勇" class="rounded-img">
-  <div class="uk-margin-left">
-    <p>📞 想買房、賣屋、不確定怎麼開始？歡迎先聊聊！</p>
-    <p>📱 <a href="tel:0920870278">賴奇勇 📞0920-870-278</a></p>
-    <p>🏠 大師房屋敦北民生加盟營業處 副店長</p>
-    <p>📍 <a href="https://maps.google.com/?q=台北市松山區民生東路四段130號">地址：台北市松山區民生東路四段130號(光復北路口)</a></p>
-    <p>📜 經紀人證號：102北市經經證字第02056號</p>
-    <p>📜 營業員證號：100登字170931號</p>
-    <p>🔗 <a href="https://line.me/ti/p/N0aCOzISyY">點擊加入LINE，一對一快速回覆</a></p>
+  <div class="section">
+    <img src="照片1.jpg" width="1210" height="300" alt="照片1">
   </div>
-</div>
 
-<footer class="uk-text-center py-3">
-  © 2007 <strong style="color: #007bff;">賴奇勇</strong>｜大師房屋 敦北民生加盟營業處
-</footer>
+  <div class="section">
+    <h2>我們能幫您做什麼？</h2>
+    <p>我們的店面就在民生東路四段與光復北路口，三角窗黃金地段，每天有數萬人經過！這代表您的房子不只「放上網」，而是實體與數位同步曝光，每天都被潛在買家看見。這不是一般仲介能提供的曝光，我們不是等成交，而是<strong>「創造成交」！</strong> 線上＋線下精準推播，讓真正願意出價的買方看到您的房子！</p>
+  </div>
 
-<script>
-  const startDate = new Date('2007-03-01');
-  const today = new Date();
-  let years = today.getFullYear() - startDate.getFullYear();
-  const hasNotReachedAnniversary = today.getMonth() < 2 || (today.getMonth() === 2 && today.getDate() < 1);
-  if (hasNotReachedAnniversary) years--;
-  document.querySelectorAll('#experience-years').forEach(el => el.innerText = years + '年');
-</script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.17/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.17/dist/js/uikit-icons.min.js"></script>
+  <div class="section">
+    <h2>賣屋服務</h2>
+    <ul>
+      <li>✅免費不動產估價</li>
+      <li>✅土地增值稅概算</li>
+      <li>✅房地合一稅分析</li>
+      <li>✅專業物件影片與社群廣告曝光</li>
+      <li>✅潛在買方名單即時配對</li>
+      <li>✅不動產稅費計算與節稅建議</li>
+      <li>✅成交流程代辦＋產權過戶協助</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>買屋服務</h2>
+    <ul>
+      <li>✅智慧找房系統快速配對</li>
+      <li>✅第一手物件通知，不怕慢一步</li>
+      <li>✅LINE即時傳送完整物件簡報</li>
+      <li>✅提供實價行情＋購屋分析報告</li>
+      <li>✅預算分析、稅金試算、議價建議</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <img src="照片2.jpg" width="1210" height="300" alt="照片2">
+  </div>
+
+  <div class="section" style="display: flex; align-items: flex-start;">
+    <img src="profile.jpg" width="400" style="border-radius: 50%; margin-right: 40px;">
+    <div>
+      <p>📞 想買房、賣屋、不確定怎麼開始？歡迎先聊聊！</p>
+      <p>📱 賴奇勇 📞<a href="tel:0920870278">0920-870-278</a></p>
+      <p>🏠 大師房屋敦北民生加盟營業處 副店長</p>
+      <p>📍 地址：<a href="https://www.google.com/maps?q=台北市松山區民生東路四段130號">台北市松山區民生東路四段130號(光復北路口)</a></p>
+      <p>📜 經紀人證號：102北市經經證字第02056號</p>
+      <p>📜 營業員證號：100登字170931號</p>
+      <p>🔗 <a href="https://line.me/ti/p/N0aCOzISyY">點擊下方加入我的LINE，一對一私訊快速回覆</a></p>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    © 2007 <strong style="color: #007bff;">賴奇勇</strong>｜大師房屋 敦北民生加盟營業處
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.20/js/uikit.min.js"></script>
+  <script>
+    const startDate = new Date('2007-03-01');
+    const today = new Date();
+    let years = today.getFullYear() - startDate.getFullYear();
+    const hasNotReachedAnniversary = today.getMonth() < 2 || (today.getMonth() === 2 && today.getDate() < 1);
+    if (hasNotReachedAnniversary) years--;
+    document.querySelectorAll('#experience-years').forEach(el => el.innerText = years + '年');
+  </script>
+  <!-- Google Analytics 程式碼可置於此 -->
 </body>
 </html>
