@@ -109,6 +109,64 @@
     font-size: 32px;
     transition: font-size 0.3s ease;
   }
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  nav .right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  .contact-section img {
+    margin-bottom: 20px;
+  }
+  .contact-info {
+    margin-left: 0;
+    text-align: center;
+  }
+  .highlight-box {
+    margin: 40px 10px;
+    font-size: 18px;
+    padding: 16px;
+  }
+  .section {
+    padding: 20px;
+  }
+  .section h2 {
+    font-size: 20px;
+    padding: 12px;
+  }
+  .logo-section img,
+  .uk-slider-items img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .uk-slider-items {
+    height: auto !important;
+  }
+  .uk-slider-nav img {
+    width: 60px;
+  }
+  .section[style*="display: flex"] {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section[style*="display: flex"] img {
+    margin-bottom: 20px;
+  }
+}
+.uk-slider-nav > .uk-active img {
+  border-color: #ffbd59 !important;
+  box-shadow: 0 0 8px rgba(255, 189, 89, 0.8);
+  transform: scale(1.05);
+}
 </style>
 </head>
 <body>
@@ -169,12 +227,37 @@
     <li><img src="保留4.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留4"></li>
     <li><img src="保留5.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留5"></li>
   </ul>
-  <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin">
-    <li uk-slideshow-item="0"><a href="#"><img src="保留1.jpg" width="100" alt="縮圖1" style="border: 3px solid #333; border-radius: 4px;"></a></li>
-    <li uk-slideshow-item="1"><a href="#"><img src="保留2.jpg" width="100" alt="縮圖2" style="border: 3px solid #333; border-radius: 4px;"></a></li>
-    <li uk-slideshow-item="2"><a href="#"><img src="保留3.jpg" width="100" alt="縮圖3" style="border: 3px solid #333; border-radius: 4px;"></a></li>
-    <li uk-slideshow-item="3"><a href="#"><img src="保留4.jpg" width="100" alt="縮圖4" style="border: 3px solid #333; border-radius: 4px;"></a></li>
-    <li uk-slideshow-item="4"><a href="#"><img src="保留5.jpg" width="100" alt="縮圖5" style="border: 3px solid #333; border-radius: 4px;"></a></li>
+  <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin" style="gap: 10px;">
+    <li uk-slider-item="0">
+  <a href="#">
+    <img src="保留1.jpg" width="100" alt="縮圖1" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
+    <div style="text-align:center; font-size:12px; margin-top:4px; color:#333;">大直豪景</div>
+  </a>
+</li>
+    <li uk-slider-item="1">
+  <a href="#">
+    <img src="保留2.jpg" width="100" alt="縮圖2" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
+    <div style="text-align:center; font-size:12px; margin-top:4px; color:#333;">信義聯勤</div>
+  </a>
+</li>
+    <li uk-slider-item="2">
+  <a href="#">
+    <img src="保留3.jpg" width="100" alt="縮圖3" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
+    <div style="text-align:center; font-size:12px; margin-top:4px; color:#333;">民生翠庭</div>
+  </a>
+</li>
+    <li uk-slider-item="3">
+  <a href="#">
+    <img src="保留4.jpg" width="100" alt="縮圖4" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
+    <div style="text-align:center; font-size:12px; margin-top:4px; color:#333;">松山國寶</div>
+  </a>
+</li>
+    <li uk-slider-item="4">
+  <a href="#">
+    <img src="保留5.jpg" width="100" alt="縮圖5" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
+    <div style="text-align:center; font-size:12px; margin-top:4px; color:#333;">南京之星</div>
+  </a>
+</li>
   </ul>
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slider-item="previous">
   <svg width="40" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="stroke: #ffbd59; stroke-width: 3; fill: none; filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));">
@@ -239,7 +322,7 @@
     <li>✅ 不動產稅費計算與節稅建議</li>
     <li>✅ 成交流程代辦＋產權過戶協助</li>
   </ul>
-  <div style="text-align: right; margin: 20px 0; display: flex; justify-content: flex-end; gap: 20px;">
+  <div style="text-align: right; margin: 0 0 20px 0; display: flex; justify-content: flex-end; gap: 20px; align-items: flex-start;">
     <img src="績效1.jpg" alt="績效照片1" style="height: 200px; width: auto; object-fit: cover; border: 3px solid #333; margin-top: -200px;">
     <img src="績效2.jpg" alt="績效照片2" style="height: 200px; width: auto; object-fit: cover; border: 3px solid #333; margin-top: -200px;">
   </div>
