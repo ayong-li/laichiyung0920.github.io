@@ -12,7 +12,7 @@
     }
     nav {
       background-color: black;
-      height: 60px5
+      height: 50px;
       position: fixed;
       top: 0;
       left: 0;
@@ -21,10 +21,10 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 30px;
+      padding: 0 20px;
     }
     nav img {
-      height: 20px;
+      height: 40px;
       margin-right: 10px;
     }
     nav .left {
@@ -83,7 +83,7 @@
       text-align: center;
       font-size: 24px;
       color: #9f1120;
-      margin: 20px 0;
+      margin: 40px 0;
     }
     .section {
       padding: 40px;
@@ -118,7 +118,7 @@
       <a href="realpricelogin.html">時價登錄</a>
       <a href="買賣房注意事項.html">買賣房注意事項</a>
       <a href="contact.html">地圖</a>
-      <input name="searchword" placeholder="搜尋" type="search" class="uk-search-input" title="搜尋 賴奇勇">
+      <input name="searchword" placeholder="搜尋" type="search" class="uk-search-input" title="搜尋 賴奇勇" style="width: 120px;">
     </div>
   </nav>
 
@@ -126,14 +126,20 @@
     <img src="logo.png" alt="公司LOGO">
   </div>
 
-  <h1>找房子、賣屋，找對人最重要</h1>
+  <div style="display: flex; align-items: center; justify-content: center; gap: 40px; margin-top: 20px;">
+  <h1 style="margin: 0;">找房子、賣屋，找對人最重要</h1>
+  <img src="store.jpg" alt="公司外觀" style="height: 300px; width: auto; object-fit: cover;">
+</div>
   <div class="contact-section">
     <img src="profile.jpg" alt="賴奇勇">
     <div class="contact-info">
       <p><strong style="font-size:20px;">聯絡我: 賴奇勇</strong></p>
+      <p>公司: 大師房屋敦北民生加盟營業處</p>
       <p>地址: 台北市松山區民生東路四段130號</p>
       <p>手機: <a href="tel:0920870278">0920870278</a></p>
-      <p><a href="https://line.me/ti/p/N0aCOzISyY">加入LINE一對一聯繫</a></p>
+      <p><a href="https://line.me/ti/p/N0aCOzISyY" target="_blank">
+  <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" style="height: 24px; width: auto; vertical-align: middle; margin-right: 12px; margin-top: 2px;">加入LINE一對一聯繫
+</a></p>
     </div>
   </div>
 
@@ -224,7 +230,7 @@
   </div>
 
   <div class="section" style="display: flex; align-items: flex-start;">
-    <img src="profile.jpg" width="400" style="border-radius: 50%; margin-right: 40px;">
+    <img src="profile.jpg" width="400" height="400" style="border-radius: 50%; margin-right: 40px; object-fit: cover;">
     <div>
       <p>📞 想買房、賣屋、不確定怎麼開始？歡迎先聊聊！</p>
       <p>📱 賴奇勇 📞<a href="tel:0920870278">0920-870-278</a></p>
@@ -232,12 +238,14 @@
       <p>📍 地址：<a href="https://www.google.com/maps?q=台北市松山區民生東路四段130號">台北市松山區民生東路四段130號(光復北路口)</a></p>
       <p>📜 經紀人證號：102北市經經證字第02056號</p>
       <p>📜 營業員證號：100登字170931號</p>
-      <p>🔗 <a href="https://line.me/ti/p/N0aCOzISyY">點擊下方加入我的LINE，一對一私訊快速回覆</a></p>
+      <p>🔗 <a href="https://line.me/ti/p/N0aCOzISyY" target="_blank">
+  <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" style="height: 28px; vertical-align: middle; margin-right: 12px; margin-top: 8px;">點擊加入我的LINE，一對一私訊快速回覆
+</a></p>
     </div>
   </div>
 
   <footer class="bg-dark text-white text-center py-3 mt-5">
-    © 2007 <strong style="color: #007bff;">賴奇勇</strong>｜大師房屋 敦北民生加盟營業處
+    <div style="background-color: #000; color: white; text-align: center; padding: 20px;">© 2007 賴奇勇｜大師房屋 敦北民生加盟營業處</div>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.20/js/uikit.min.js"></script>
@@ -249,6 +257,16 @@
     if (hasNotReachedAnniversary) years--;
     document.querySelectorAll('#experience-years').forEach(el => el.innerText = years + '年');
   </script>
-  <!-- Google Analytics 程式碼可置於此 -->
+  <!-- Google Analytics 分析程式碼可置於此 -->
+<a href="https://line.me/ti/p/N0aCOzISyY" target="_blank" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
+  <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入LINE" style="height: 60px; transition: transform 0.3s ease;">
+</a>
+<script>
+  const lineBtn = document.querySelector('a[href*="line.me"] img');
+  if (lineBtn) {
+    lineBtn.addEventListener('mouseover', () => lineBtn.style.transform = 'scale(1.1)');
+    lineBtn.addEventListener('mouseout', () => lineBtn.style.transform = 'scale(1)');
+  }
+</script>
 </body>
 </html>
