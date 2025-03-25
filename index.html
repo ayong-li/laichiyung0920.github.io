@@ -11,18 +11,20 @@
       font-family: 'Microsoft JhengHei', sans-serif;
     }
     nav {
-      background-color: black;
-      height: 50px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 20px;
-    }
+  background-color: black;
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
     nav img {
       height: 40px;
       margin-right: 10px;
@@ -93,7 +95,7 @@
       color: #cdb15b;
       padding: 16px 24px;
       margin: 0;
-      width: 100%;
+      max-width: 100%;
       font-size: 25px;
       box-sizing: border-box;
     }
@@ -115,7 +117,7 @@
     <div class="left">
       <a href="index.html">
         <img src="profile.jpg" alt="賴奇勇">
-        <strong style="color:white; font-weight:bold;">賴奇勇</strong>
+        <strong style="color:white; font-weight:bold;">賴奇勇-大師房屋</strong>
       </a>
     </div>
     <div class="right">
@@ -134,10 +136,10 @@
     <img src="logo.png" alt="公司LOGO">
   </div>
 
-  <div style="display: flex; align-items: center; justify-content: center; gap: 40px; margin-top: 20px;">
-  <img src="profile.jpg" alt="賴奇勇" style="height: 300px; width: auto; object-fit: cover;">
+  <div style="display: flex; align-items: flex-start; justify-content: center; gap: 40px; margin-top: 20px;">
+  <img src="profile.jpg" alt="賴奇勇" style="height: 300px; width: auto; object-fit: cover; margin-top: 40px;">
   <h1 style="margin: 0;">找房子、賣屋，找對人最重要</h1>
-  <img src="store.jpg" alt="公司外觀" style="height: 300px; width: auto; object-fit: cover;">
+  <img src="store.jpg" alt="公司外觀" style="height: 300px; width: auto; object-fit: cover; margin-top: 40px;">
 </div>
 </div>
   <div class="contact-section">
@@ -153,20 +155,27 @@
     </div>
   </div>
 
-  <div class="highlight-box" style="text-align: center; font-size: 25px; padding: 16px 24px; line-height: 1.4; width: 100%; box-sizing: border-box;">
+  <div class="highlight-box" style="text-align: center; font-size: 25px; padding: 16px 24px; line-height: 1.4; max-width: 100%; margin: 40px auto; box-sizing: border-box;">
   <h2 style="margin: 0 auto; display: inline-block; font-size: 25px; line-height: 1.4;">
-    <strong style="color: #d62438; font-size: 28px; background-color: #ffbd59; padding: 4px 12px; border-radius: 6px;">若您有任何房地產的問題，歡迎與我聯繫&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📞 0920-870278 賴奇勇</strong>
+    <strong style="color: #d62438; font-size: 28px; background-color: #ffbd59; padding: 4px 12px; border-radius: 6px;">若您有任何房地產的問題，歡迎與我聯繫                📞 0920-870278 賴奇勇</strong>
   </h2>
-</div>
+  </div>
 
   <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-    <ul class="uk-slider-items uk-child-width-1-1">
-      <li><img src="保留1.jpg" width="1170" height="658" alt="保留1"></li>
-      <li><img src="保留2.jpg" width="1170" height="658" alt="保留2"></li>
-      <li><img src="保留3.jpg" width="1170" height="658" alt="保留3"></li>
-      <li><img src="保留4.jpg" width="1170" height="658" alt="保留4"></li>
-      <li><img src="保留5.jpg" width="1170" height="658" alt="保留5"></li>
-    </ul>
+  <ul class="uk-slider-items uk-child-width-1-1 uk-grid uk-flex-center">
+    <li><img src="保留1.jpg" style="width: 100%; height: auto; object-fit: cover;" alt="保留1"></li>
+    <li><img src="保留2.jpg" style="width: 100%; height: auto; object-fit: cover;" alt="保留2"></li>
+    <li><img src="保留3.jpg" style="width: 100%; height: auto; object-fit: cover;" alt="保留3"></li>
+    <li><img src="保留4.jpg" style="width: 100%; height: auto; object-fit: cover;" alt="保留4"></li>
+    <li><img src="保留5.jpg" style="width: 100%; height: auto; object-fit: cover;" alt="保留5"></li>
+  </ul>
+  <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin">
+    <li uk-slideshow-item="0"><a href="#"><img src="保留1.jpg" width="100" alt="縮圖1"></a></li>
+    <li uk-slideshow-item="1"><a href="#"><img src="保留2.jpg" width="100" alt="縮圖2"></a></li>
+    <li uk-slideshow-item="2"><a href="#"><img src="保留3.jpg" width="100" alt="縮圖3"></a></li>
+    <li uk-slideshow-item="3"><a href="#"><img src="保留4.jpg" width="100" alt="縮圖4"></a></li>
+    <li uk-slideshow-item="4"><a href="#"><img src="保留5.jpg" width="100" alt="縮圖5"></a></li>
+  </ul>
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slider-item="previous">
       <svg width="19" height="16" viewBox="0 0 19 16" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#000" stroke-width="2" d="M8.8 1.5L1.8 8l7 6.5"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M19 7H3v2h16z"></path></svg>
     </a>
@@ -200,32 +209,37 @@
     </ul>
   </div>
 
-  <div class="highlight-box" style="text-align: center; font-size: 25px; padding: 16px 24px; line-height: 1.4; width: 100%; box-sizing: border-box;">
+  <div class="highlight-box" style="text-align: center; font-size: 25px; padding: 16px 24px; line-height: 1.4; max-width: 100%; margin: 40px auto; box-sizing: border-box;">
   <h2 style="margin: 0 auto; display: inline-block; font-size: 25px; line-height: 1.4;">
     <strong style="color: #d62438; font-size: 28px; background-color: #ffbd59; padding: 4px 12px; border-radius: 6px;">若您有任何房地產的問題，歡迎與我聯繫                📞 0920-870278 賴奇勇</strong>
   </h2>
   </div>
 
- <div class="section">
+  <div class="section">
   <img src="照片1.jpg" alt="照片1" style="width: 100%; height: auto; object-fit: cover;">
   </div>
-  
+
   <div class="section">
     <h2>我們能幫您做什麼？</h2>
     <p>我們的店面就在民生東路四段與光復北路口，三角窗黃金地段，每天有數萬人經過！這代表您的房子不只「放上網」，而是實體與數位同步曝光，每天都被潛在買家看見。這不是一般仲介能提供的曝光，我們不是等成交，而是<strong>「創造成交」！</strong> 線上＋線下精準推播，讓真正願意出價的買方看到您的房子！</p>
   </div>
 
   <div class="section">
-    <h2>賣屋服務</h2>
-    <ul>
-      <li>✅免費不動產估價</li>
-      <li>✅土地增值稅概算</li>
-      <li>✅房地合一稅分析</li>
-      <li>✅專業物件影片與社群廣告曝光</li>
-      <li>✅潛在買方名單即時配對</li>
-      <li>✅不動產稅費計算與節稅建議</li>
-      <li>✅成交流程代辦＋產權過戶協助</li>
-    </ul>
+  <h2>賣屋服務</h2>
+  <ul>
+    <li>✅ 免費不動產估價</li>
+    <li>✅ 土地增值稅概算</li>
+    <li>✅ 房地合一稅分析</li>
+    <li>✅ 專業物件影片與社群廣告曝光</li>
+    <li>✅ 潛在買方名單即時配對</li>
+    <li>✅ 不動產稅費計算與節稅建議</li>
+    <li>✅ 成交流程代辦＋產權過戶協助</li>
+  </ul>
+  <div style="text-align: right; margin: 20px 0 0 0; display: flex; justify-content: flex-end; gap: 20px;">
+    <img src="績效1.jpg" alt="績效照片1" style="height: 180px; width: auto; object-fit: cover; border: 3px solid #333;">
+    <img src="績效2.jpg" alt="績效照片2" style="height: 180px; width: auto; object-fit: cover; border: 3px solid #333;">
+  </div>
+</div>
   </div>
 
   <div class="section">
@@ -239,9 +253,7 @@
     </ul>
   </div>
 
-  <div class="section">
-    <img src="照片2.jpg" width="1210" height="300" alt="照片2">
-  </div>
+  
 
   <div class="section" style="display: flex; align-items: flex-start;">
     <img src="profile.jpg" width="400" height="400" style="border-radius: 50%; margin-right: 40px; object-fit: cover;">
