@@ -167,6 +167,10 @@
   box-shadow: 0 0 8px rgba(255, 189, 89, 0.8);
   transform: scale(1.05);
 }
+@keyframes bounce {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
 </style>
 </head>
 <body>
@@ -194,10 +198,13 @@
     <img src="logo.png" alt="公司LOGO">
   </div>
 
-  <div style="display: flex; align-items: flex-start; justify-content: center; gap: 40px; margin-top: 20px;">
-  <img src="profile.jpg" alt="賴奇勇" style="height: 350px; width: auto; object-fit: cover; margin-top: 40px;">
+  <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
   <h1 style="margin: 0; text-align: center;">找房子、賣屋，找對人最重要</h1>
-  <img src="store.jpg" alt="公司外觀" style="width: 600px; max-width: 100%; height: auto; object-fit: cover; margin-top: 40px;">
+  <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+    <img src="store.jpg" alt="公司外觀" style="width: 1170px; max-width: 100%; height: auto; object-fit: cover;">
+  </div>
+  </div>
+</div>
 </div>
 </div>
   <div class="contact-section" style="display: flex; align-items: flex-start; justify-content: flex-start; gap: 40px; margin: 0 50px 50px;">
@@ -221,80 +228,100 @@
 
   <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true; autoplay-interval: 2000">
   <ul class="uk-slider-items uk-child-width-1-1">
-    <li><img src="保留1.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留1"></li>
-    <li><img src="保留2.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留2"></li>
-    <li><img src="保留3.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留3"></li>
-    <li><img src="保留4.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留4"></li>
-    <li><img src="保留5.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留5"></li>
-    <li><img src="保留6.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留6"></li>
-    <li><img src="保留7.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留7"></li>
-    <li><img src="保留8.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留8"></li>
-    <li><img src="保留9.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留9"></li>
-    <li><img src="保留10.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留10"></li>
-  </ul>
-  </ul>
-  <ul class="uk-slider-nav uk-thumbnav uk-flex-nowrap uk-overflow-auto uk-margin" style="gap: 10px; padding: 10px 0;">
-    <li uk-slider-item="0">
-  <a href="#">
-    <img src="保留1.jpg" width="100" alt="縮圖1" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
-    <div style="text-align:center; font-size:12px; margin-top:4px; color:#333;">松山新城乙區</div>
-  </a>
+    <li style="position: relative;">
+  <img src="保留1.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留1">
+  <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 6px 12px; font-size: 18px; border-radius: 4px;">松山新城乙區</div>
 </li>
-    <li uk-slider-item="1">
-  <a href="#">
-    <img src="保留2.jpg" width="100" alt="縮圖2" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
-    <div style="text-align:center; font-size:12px; margin-top:4px; color:#333;">敦煌大樓</div>
-  </a>
+    <li style="position: relative;">
+  <img src="保留2.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留2">
+  <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 6px 12px; font-size: 18px; border-radius: 4px;">敦煌大樓</div>
 </li>
-    <li uk-slider-item="2">
-  <a href="#">
-    <img src="保留3.jpg" width="100" alt="縮圖3" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
-    <div style="text-align:center; font-size:12px; margin-top:4px; color:#333;">健安新城</div>
-  </a>
+    <li style="position: relative;">
+  <img src="保留3.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留3">
+  <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 6px 12px; font-size: 18px; border-radius: 4px;">健安新城</div>
 </li>
-    <li uk-slider-item="3">
-  <a href="#">
-    <img src="保留4.jpg" width="100" alt="縮圖4" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
-    <div style="text-align:center; font-size:12px; margin-top:4px; color:#333;">平安新城</div>
-  </a>
+    <li style="position: relative;">
+  <img src="保留4.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留4">
+  <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 6px 12px; font-size: 18px; border-radius: 4px;">平安新城</div>
 </li>
-    <li uk-slider-item="4">
-  <a href="#">
-    <img src="保留5.jpg" width="100" alt="縮圖5" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
-    <div style="text-align:center; font-size:12px; margin-top:4px; color:#333;">聯合二村</div>
-  </a>
+    <li style="position: relative;">
+  <img src="保留5.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留5">
+  <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 6px 12px; font-size: 18px; border-radius: 4px;">復興新城</div>
 </li>
-    <li uk-slider-item="5">
-  <a href="#">
-    <img src="保留6.jpg" width="100" alt="縮圖6" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
-    <div style="text-align:center; font-size:12px; margin-top:4px; color:#333;">聯合二村</div>
-  </a>
+    <li style="position: relative;">
+  <img src="保留6.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留6">
+  <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 6px 12px; font-size: 18px; border-radius: 4px;">聯合二村</div>
 </li>
-    <li uk-slider-item="6">
-  <a href="#">
-    <img src="保留7.jpg" width="100" alt="縮圖7" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
-    <div style="text-align:center; font-size:12px; margin-top:4px; color:#333;">南京綠藝</div>
-  </a>
+    <li style="position: relative;">
+  <img src="保留7.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留7">
+  <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 6px 12px; font-size: 18px; border-radius: 4px;">南京綠藝</div>
 </li>
-    <li uk-slider-item="7">
-  <a href="#">
-    <img src="保留8.jpg" width="100" alt="縮圖8" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
-    <div style="text-align:center; font-size:12px; margin-top:4px; color:#333;">富麗天廈</div>
-  </a>
+    <li style="position: relative;">
+  <img src="保留8.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留8">
+  <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 6px 12px; font-size: 18px; border-radius: 4px;">富麗天廈</div>
 </li>
-    <li uk-slider-item="8">
-  <a href="#">
-    <img src="保留9.jpg" width="100" alt="縮圖9" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
-    <div style="text-align:center; font-size:12px; margin-top:4px; color:#333;">民生御品</div>
-  </a>
+    <li style="position: relative;">
+  <img src="保留9.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留9">
+  <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 6px 12px; font-size: 18px; border-radius: 4px;">民生御品</div>
 </li>
-    <li uk-slider-item="9">
-  <a href="#">
-    <img src="保留10.jpg" width="100" alt="縮圖10" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
-    <div style="text-align:center; font-size:12px; margin-top:4px; color:#333;">誠品生活</div>
-  </a>
+    <li style="position: relative;">
+  <img src="保留10.jpg" style="width: 1170px; height: 658px; object-fit: cover; margin: 0 auto; display: block;" alt="保留10">
+  <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 6px 12px; font-size: 18px; border-radius: 4px;">誠品生活</div>
 </li>
   </ul>
+  </ul>
+  <ul class="uk-slider-nav uk-thumbnav uk-flex uk-flex-center uk-margin" style="gap: 10px; padding: 10px 0; flex-wrap: wrap; justify-content: center;">
+  <li uk-slider-item="0">
+    <a href="#">
+      <img src="保留1.jpg" width="100" alt="縮圖1" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
+    </a>
+  </li>
+  <li uk-slider-item="1">
+    <a href="#">
+      <img src="保留2.jpg" width="100" alt="縮圖2" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
+    </a>
+  </li>
+  <li uk-slider-item="2">
+    <a href="#">
+      <img src="保留3.jpg" width="100" alt="縮圖3" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
+    </a>
+  </li>
+  <li uk-slider-item="3">
+    <a href="#">
+      <img src="保留4.jpg" width="100" alt="縮圖4" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
+    </a>
+  </li>
+  <li uk-slider-item="4">
+    <a href="#">
+      <img src="保留5.jpg" width="100" alt="縮圖5" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
+    </a>
+  </li>
+  <li uk-slider-item="5">
+    <a href="#">
+      <img src="保留6.jpg" width="100" alt="縮圖6" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
+    </a>
+  </li>
+  <li uk-slider-item="6">
+    <a href="#">
+      <img src="保留7.jpg" width="100" alt="縮圖7" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
+    </a>
+  </li>
+  <li uk-slider-item="7">
+    <a href="#">
+      <img src="保留8.jpg" width="100" alt="縮圖8" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
+    </a>
+  </li>
+  <li uk-slider-item="8">
+    <a href="#">
+      <img src="保留9.jpg" width="100" alt="縮圖9" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
+    </a>
+  </li>
+  <li uk-slider-item="9">
+    <a href="#">
+      <img src="保留10.jpg" width="100" alt="縮圖10" style="border: 3px solid #333; border-radius: 4px; transition: all 0.3s;">
+    </a>
+  </li>
+</ul>
     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slider-item="previous">
   <svg width="40" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="stroke: #ffbd59; stroke-width: 3; fill: none; filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));">
     <path d="M15 18l-6-6 6-6" />
@@ -397,7 +424,37 @@
     </div>
   </div>
 
-  <footer class="bg-dark text-white text-center py-3 mt-5">
+  <div id="visitor-counter" style="text-align: center; font-size: 16px; margin: 20px 0;"></div>
+<script>
+  function animateCountUp(id, target) {
+    let el = document.getElementById(id);
+    let count = 0;
+    const duration = 1000;
+    const increment = Math.ceil(target / (duration / 30));
+
+    const counter = setInterval(() => {
+      count += increment;
+      if (count >= target) {
+        count = target;
+        clearInterval(counter);
+      }
+      el.innerHTML = `
+        <img src="https://img.icons8.com/ios-filled/50/000000/visible--v1.png" 
+             alt="eye icon" style="width: 24px; vertical-align: middle; margin-right: 8px;">
+        這個網站已被瀏覽 <strong>${count.toLocaleString()}</strong> 次`;
+    }, 30);
+  }
+
+  fetch('https://api.countapi.xyz/hit/laichiyung0920.github.io/visits')
+    .then(res => res.json())
+    .then(data => {
+      animateCountUp("visitor-counter", data.value);
+    })
+    .catch(() => {
+      document.getElementById('visitor-counter').innerText = '目前無法顯示瀏覽人數';
+    });
+</script>
+<footer class="bg-dark text-white text-center py-3 mt-5">
     <div style="background-color: #000; color: white; text-align: center; padding: 20px;">© 2007 賴奇勇｜大師房屋 敦北民生加盟營業處</div>
   </footer>
 
@@ -412,7 +469,7 @@
   </script>
   <!-- Google Analytics 分析程式碼可置於此 -->
 <a href="https://line.me/ti/p/N0aCOzISyY" target="_blank" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
-  <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入LINE" style="height: 60px; transition: transform 0.3s ease;">
+  <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入LINE" style="height: 60px; transition: transform 0.3s ease; animation: bounce 1s infinite alternate;">
 </a>
 <script>
   const lineBtn = document.querySelector('a[href*="line.me"] img');
