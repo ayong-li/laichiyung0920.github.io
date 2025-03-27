@@ -3,67 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>賴奇勇的奮鬥歷程｜房仲精神紀錄</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+  <title>🧾 賴奇勇的奮鬥歷程｜房仲精神紀錄</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
+      background-color: #fffaf5;
       font-family: "Microsoft JhengHei", sans-serif;
-      background-color: #fefefe;
-      padding-top: 80px;
-      padding-bottom: 80px;
     }
-    .navbar {
-      background-color: #a10e0e;
+    h1 {
+      color: #a10e0e;
+      text-align: center;
+      margin: 40px 0;
     }
-    .navbar-brand, .nav-link {
-      color: white !important;
+    .testimonial {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #fff;
+      border-left: 5px solid #a10e0e;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
     }
-    .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    }
-    .section-title {
-      text-align: left;
-      margin: 20px 0 30px;
+    .testimonial-title {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
       color: #a10e0e;
     }
-    .content p {
-      text-align: justify;
-      line-height: 1.9;
-      margin-bottom: 1.2em;
+    .navbar {
+      background-color: #000;
     }
-    footer {
-      background-color: #a10e0e;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+    .navbar a {
+      color: white !important;
     }
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+  <!-- 導覽列 -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="profile.jpg" alt="賴奇勇" style="height: 40px; border-radius: 50%; margin-right: 8px;">
-        賴奇勇
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="index.html"><strong>賴奇勇-大師房屋</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#hero">首頁</a></li>
-          <li class="nav-item"><a class="nav-link" href="resume.html">個人簡介</a></li>
-          <li class="nav-item"><a class="nav-link" href="#service">社區介紹</a></li>
-          <li class="nav-item"><a class="nav-link" href="realpricelogin.html">實價登錄│成交行情</a></li>
-          <li class="nav-item"><a class="nav-link" href="#tips">買/賣屋需注意事項</a></li>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">客戶這樣說</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">自我介紹</a></li>
+          <li class="nav-item"><a class="nav-link" href="社區介紹.html">社區介紹</a></li>
+          <li class="nav-item"><a class="nav-link" href="realpricelogin.html">時價登錄</a></li>
+          <li class="nav-item"><a class="nav-link" href="買賣房注意事項.html">買賣房注意事項</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">地圖</a></li>
         </ul>
       </div>
     </div>
   </nav>
+
 
   <div class="container content py-4">
     <h2 class="section-title">💪 賴奇勇的奮鬥歷程</h2>
@@ -93,8 +88,30 @@
     </div>
   </div>
 
-  <footer>
-    © 2025 賴奇勇｜奮鬥精神真誠陪伴您的房產旅程
-  </footer>
+  <footer style="background-color: #000; color: white; text-align: center; padding: 20px; width: 100vw; margin-left: calc(-50vw + 50%);">
+  © 2007 賴奇勇｜大師房屋 敦北民生加盟營業處
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.20/js/uikit.min.js"></script>
+  <script>
+    const startDate = new Date('2007-03-01');
+    const today = new Date();
+    let years = today.getFullYear() - startDate.getFullYear();
+    const hasNotReachedAnniversary = today.getMonth() < 2 || (today.getMonth() === 2 && today.getDate() < 1);
+    if (hasNotReachedAnniversary) years--;
+    document.querySelectorAll('#experience-years').forEach(el => el.innerText = years + '年');
+  </script>
+  <!-- Google Analytics 分析程式碼可置於此 -->
+<a href="https://line.me/ti/p/N0aCOzISyY" target="_blank" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
+  <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入LINE" style="height: 60px; transition: transform 0.3s ease; animation: bounce 1s infinite alternate;">
+</a>
+<script>
+  const lineBtn = document.querySelector('a[href*="line.me"] img');
+  if (lineBtn) {
+    lineBtn.addEventListener('mouseover', () => lineBtn.style.transform = 'scale(1.1)');
+    lineBtn.addEventListener('mouseout', () => lineBtn.style.transform = 'scale(1)');
+  }
+</script>
 </body>
 </html>
+
