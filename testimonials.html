@@ -103,8 +103,29 @@
   <div class="testimonial"><span class="testimonial-title">從介紹到成交都一條龍服務</span>「我們是朋友介紹來的，原本只是想估價，結果奇勇從建議修繕、照片拍攝、到帶看都親力親為，成交後還請我們吃飯，真有心！」— 李太太（推薦人）</div>
 
 <footer class="bg-dark text-white text-center py-3 mt-5">
-    <div>© 2007 賴奇勇｜大師房屋 敦北民生加盟營業處</div>
+    <div style="background-color: #000; color: white; text-align: center; padding: 20px;">© 2007 賴奇勇｜大師房屋 敦北民生加盟營業處</div>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.20/js/uikit.min.js"></script>
+  <script>
+    const startDate = new Date('2007-03-01');
+    const today = new Date();
+    let years = today.getFullYear() - startDate.getFullYear();
+    const hasNotReachedAnniversary = today.getMonth() < 2 || (today.getMonth() === 2 && today.getDate() < 1);
+    if (hasNotReachedAnniversary) years--;
+    document.querySelectorAll('#experience-years').forEach(el => el.innerText = years + '年');
+  </script>
+  <!-- Google Analytics 分析程式碼可置於此 -->
+<a href="https://line.me/ti/p/N0aCOzISyY" target="_blank" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
+  <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入LINE" style="height: 60px; transition: transform 0.3s ease; animation: bounce 1s infinite alternate;">
+</a>
+<script>
+  const lineBtn = document.querySelector('a[href*="line.me"] img');
+  if (lineBtn) {
+    lineBtn.addEventListener('mouseover', () => lineBtn.style.transform = 'scale(1.1)');
+    lineBtn.addEventListener('mouseout', () => lineBtn.style.transform = 'scale(1)');
+  }
+</script>
 </body>
 </html>
+
