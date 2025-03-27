@@ -136,13 +136,38 @@
     font-size: 18px;
     padding: 16px;
   }
-  .section {
-    padding: 20px;
-  }
-  .section h2 {
-    font-size: 20px;
-    padding: 12px;
-  }
+.section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f8f8f8; /* 可選背景色 */
+  border-radius: 8px;
+  text-align: left; /* 整個區塊靠左 */
+}
+
+.section h2 {
+  background-color: #34586e;
+  color: #cdb15b;
+  padding: 16px 24px;
+  margin: 0 0 20px 0;
+  font-size: 25px;
+  text-align: left;
+  border-radius: 6px 6px 0 0;
+}
+
+.section ul {
+  text-align: left;      /* 💡 重點：文字向左對齊 */
+  list-style: none;      /* 不要預設圓點符號，因為你已經用 ✅ */
+  padding-left: 0;       /* 拿掉預設縮排 */
+  margin: 0;
+  line-height: 1.8em;
+  font-size: 18px;
+}
+
+.section ul li {
+  margin-bottom: 12px;
+}
   .logo-section img,
   .uk-slider-items img {
     width: 100% !important;
