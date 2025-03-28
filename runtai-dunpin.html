@@ -1,54 +1,202 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="18年的房仲經驗 | 用家人的心陪您買賣房屋">
   <title>潤泰敦品｜社區介紹｜賴奇勇</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.20/dist/css/uikit.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.20/css/uikit.min.css" />
   <style>
     body {
-      font-family: "Microsoft JhengHei", sans-serif;
-      background-color: #fffaf5;
+      font-family: 'Microsoft JhengHei', sans-serif;
     }
-    footer {
-      background-color: #000;
+    nav {
+  background-color: black;
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+    nav img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    nav .left {
+      display: flex;
+      align-items: center;
+    }
+    nav .right a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    nav .right input[type="search"] {
+      background-color: #cdb15b;
+      border: none;
+      padding: 5px;
+    }
+    .logo-section {
+      margin-top: 60px;
+      text-align: center;
+    }
+    h1 {
+      color: #866a13;
+      font-size: 28px;
+      text-align: center;
+    }
+    .contact-section {
+      display: flex;
+      align-items: center;
+      margin: 50px;
+    }
+    .contact-section img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+    }
+    .contact-info {
+      margin-left: 100px;
+      font-size: 18px;
+    }
+    .highlight-box {
+      background-color: #34586e;
+      color: #cdb15b;
+      padding: 20px;
+      margin: 150px 40px 40px;
+      font-size: 20px;
+    }
+    .uk-slider-items img {
+      border: 5px solid #eee;
+      transition: transform 0.3s;
+    }
+    .uk-slider-items img:hover {
+      transform: scale(1.02);
+    }
+    .center-title {
+      text-align: center;
+      font-size: 24px;
+      color: #9f1120;
+      margin: 40px 0;
+    }
+    .section {
+      padding: 40px;
+    }
+    .section h2 {
+      background-color: #34586e;
+      color: #cdb15b;
+      padding: 16px 24px;
+      margin: 0;
+      max-width: 100%;
+      font-size: 25px;
+      box-sizing: border-box;
+    }
+    .footer {
+      background-color: #222;
       color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 60px;
     }
-    .uk-card-secondary {
-      background-color: #333;
-      color: #fff;
-    }
-    .uk-card-secondary .uk-h6 {
-      color: #ffbd59;
-    }
-    .uk-card-secondary li {
-      border-bottom: 1px solid #555;
-      padding: 8px 0;
-    }
-  </style>
+    .highlight-box strong:hover {
+    font-size: 32px;
+    transition: font-size 0.5s ease;
+  }
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  nav .right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  .contact-section img {
+    margin-bottom: 20px;
+  }
+  .contact-info {
+    margin-left: 0;
+    text-align: center;
+  }
+  .highlight-box {
+    margin: 40px 10px;
+    font-size: 18px;
+    padding: 16px;
+  }
+  .section {
+    padding: 20px;
+  }
+  .section h2 {
+    font-size: 20px;
+    padding: 12px;
+  }
+  .logo-section img,
+  .uk-slider-items img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .uk-slider-items {
+    height: auto !important;
+  }
+  .uk-slider-nav img {
+    width: 60px;
+  }
+  .section[style*="display: flex"] {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section[style*="display: flex"] img {
+    margin-bottom: 20px;
+  }
+}
+.uk-slider-nav > .uk-active img {
+  border-color: #ffbd59 !important;
+  box-shadow: 0 0 8px rgba(255, 189, 89, 0.8);
+  transform: scale(1.05);
+}
+@keyframes bounce {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+</style>
 </head>
 <body>
 
-<!-- 導覽列 -->
-<nav class="uk-navbar-container uk-navbar-transparent uk-background-secondary uk-light" uk-navbar>
-  <div class="uk-navbar-left">
-    <a class="uk-navbar-item uk-logo" href="index.html"><strong>賴奇勇-大師房屋</strong></a>
+  <nav>
+    <div class="left">
+      <a href="index.html">
+        
+        <strong style="color:white; font-weight:bold;">賴奇勇-大師房屋</strong>
+      </a>
+    </div>
+    <div class="right">
+      <a href="index.html">首頁</a>
+      <a href="testimonials.html">客戶這樣說</a>
+      <a href="resume.html">自我介紹</a>
+      <a href="社區介紹.html">社區介紹</a>
+      <a href="realpricelogin.html">實價登錄</a>
+      <a href="買賣房注意事項.html">買賣房注意事項</a>
+      <a href="contact.html">地圖</a>
+      <input name="searchword" placeholder="搜尋" type="search" class="uk-search-input" title="搜尋 賴奇勇" style="width: 120px;">
+    </div>
+  </nav>
+
+  <div class="logo-section">
+    <img src="logo.png" alt="公司LOGO">
   </div>
-  <div class="uk-navbar-right">
-    <ul class="uk-navbar-nav">
-      <li><a href="index.html">首頁</a></li>
-      <li><a href="testimonials.html">客戶這樣說</a></li>
-      <li><a href="resume.html">自我介紹</a></li>
-      <li><a href="社區介紹.html">社區介紹</a></li>
-      <li><a href="realpricelogin.html">實價登錄</a></li>
-      <li><a href="買賣房注意事項.html">買賣房注意事項</a></li>
-      <li><a href="contact.html">地圖</a></li>
-    </ul>
-  </div>
-</nav>
 
 <!-- 主內容 -->
 <div class="uk-container uk-margin-large-top uk-margin-large-bottom">
@@ -82,16 +230,12 @@
     <!-- 右側：圖片 -->
     <div class="uk-text-center">
       <img 
-        src="https://luxuryhome.tw/templates/yootheme/cache/08-3-b18c4d35.webp"
-        srcset="https://luxuryhome.tw/templates/yootheme/cache/08-3-b18c4d35.webp 600w, 
-                https://luxuryhome.tw/templates/yootheme/cache/08-3-d885534d.webp 768w, 
-                https://luxuryhome.tw/templates/yootheme/cache/08-3-2019cbf3.webp 848w"
-        sizes="(min-width: 600px) 600px"
-        alt="潤泰敦品 建築外觀"
-        class="uk-border-rounded uk-box-shadow-small"
-        style="max-width: 100%; height: auto;"
-        uk-img
-      >
+  src="https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg" 
+  alt="潤泰敦品 建築外觀" 
+  style="max-width: 100%; height: auto;" 
+  class="uk-border-rounded uk-box-shadow-small"
+>
+
       <div class="uk-text-meta uk-margin-small-top">▲ 「潤泰敦品」位於敦化北路155巷100弄2號、民生東路精華地段，基地面積1461坪，由潤泰創新國際投資興建、林泓祥建築師所規劃設計。本案樓層規劃地上17層、地下3層，坪數規劃為69～119、139坪，公設比33%，總戶數71戶，主結構RC，1999年完工。
 「潤泰敦品」絕無僅有的1460坪完整開闊純住宅基地，突破以往高級住宅的規劃和思維，創新呈現台灣頂級豪宅的新風貌。以大坪數、大空間、雄偉外觀造型、挑高氣派門廳、尊貴公共設施、歐洲藝術花園、高科技保全設施與稀有純住宅地段，刷新國人對傳統高級住宅的印象，締造台灣建築界頂級豪宅的嶄新里程碑，更是台灣後來豪宅風潮的完美典範。「潤泰敦品」分為大樓與別墅兩種產品，據指出，購買兩棟別墅的主人，其中一位便是尹衍樑的「恩師」，國民黨投管會主委劉泰英；而「李登輝台北辦公室」則是由台灣綜合研究院出資購買。
 </div>
@@ -114,21 +258,27 @@
 </div>
 
 <!-- 聯絡資訊列 -->
- <div class="container content">
-    <h1 class="section-title">關於賴奇勇</h1>
-    <p>我是賴奇勇，擁有18年的房地產經驗，專注於提供專業且貼心的服務，協助客戶在台北市松山區找到理想的家。</p>
-
-    <h2 class="section-title">聯絡資訊</h2>
-    <p><strong>公司：</strong>大師房屋 敦北民生加盟營業處</p>
-    <p><strong>地址：</strong>台北市松山區民生東路四段130號</p>
-    <p><strong>手機：</strong><a href="tel:0920870278">0920-870278</a></p>
-    <p><strong>LINE：</strong><a href="https://line.me/ti/p/N0aCOzISyY" target="_blank">加入我的LINE</a></p>
+ <div class="section" style="display: flex; align-items: flex-start;">
+    <img src="profile.jpg" width="400" height="400" style="border-radius: 50%; margin-right: 40px; object-fit: cover;">
+    <div>
+      <p>📞 想買房、賣屋、不確定怎麼開始？歡迎先聊聊！</p>
+      <p>📱 賴奇勇 📞<a href="tel:0920870278">0920-870-278</a></p>
+      <p>🏠 大師房屋敦北民生加盟營業處 副店長</p>
+      <p>📍 地址：<a href="https://www.google.com/maps?q=台北市松山區民生東路四段130號">台北市松山區民生東路四段130號(光復北路口)</a></p>
+      <p>📜 經紀人證號：102北市經經證字第02056號</p>
+      <p>📜 營業員證號：100登字170931號</p>
+      <p>🔗 <a href="https://line.me/ti/p/N0aCOzISyY" target="_blank">
+  <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" style="height: 28px; vertical-align: middle; margin-right: 12px; margin-top: 8px;">點擊加入我的LINE，一對一私訊快速回覆
+</a></p>
+    </div>
   </div>
 
-  <!-- 頁腳 -->
-  <footer style="background-color: #000; color: white; text-align: center; padding: 20px; width: 100vw; margin-left: calc(-50vw + 50%);">
-  © 2007 賴奇勇｜大師房屋 敦北民生加盟營業處
-</footer>
+  <div id="visitor-counter" style="text-align: center; font-size: 16px; margin: 20px 0;"></div>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <div style="background-color: #000; color: white; text-align: center; padding: 20px;">© 2007 賴奇勇｜大師房屋 敦北民生加盟營業處</div>
+  </footer>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.20/js/uikit.min.js"></script>
   <script>
     const startDate = new Date('2007-03-01');
