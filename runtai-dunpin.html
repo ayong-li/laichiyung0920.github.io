@@ -9,169 +9,55 @@
   <style>
     body {
       font-family: 'Microsoft JhengHei', sans-serif;
+      background-color: #fffaf5;
     }
     nav {
-  background-color: black;
-  width: 100%;
-  box-sizing: border-box;
-  height: 50px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-    nav img {
-      height: 40px;
-      margin-right: 10px;
-    }
-    nav .left {
+      background-color: black;
+      height: 50px;
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
     }
-    nav .right a {
+    nav .left strong {
       color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-size: 16px;
+      font-weight: bold;
     }
-    nav .right input[type="search"] {
-      background-color: #cdb15b;
+    .uk-container {
+      margin-top: 80px;
+    }
+    .uk-card {
+      background: #f5f5f5;
+    }
+    .uk-text-meta {
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+    iframe {
       border: none;
-      padding: 5px;
+      border-radius: 8px;
     }
-    .logo-section {
-      margin-top: 60px;
-      text-align: center;
-    }
-    h1 {
-      color: #866a13;
-      font-size: 28px;
-      text-align: center;
-    }
-    .contact-section {
-      display: flex;
-      align-items: center;
-      margin: 50px;
-    }
-    .contact-section img {
-      width: 300px;
-      height: 300px;
-      object-fit: cover;
-    }
-    .contact-info {
-      margin-left: 100px;
-      font-size: 18px;
-    }
-    .highlight-box {
-      background-color: #34586e;
-      color: #cdb15b;
-      padding: 20px;
-      margin: 150px 40px 40px;
-      font-size: 20px;
-    }
-    .uk-slider-items img {
-      border: 5px solid #eee;
-      transition: transform 0.3s;
-    }
-    .uk-slider-items img:hover {
-      transform: scale(1.02);
-    }
-    .center-title {
-      text-align: center;
-      font-size: 24px;
-      color: #9f1120;
-      margin: 40px 0;
-    }
-    .section {
-      padding: 40px;
-    }
-    .section h2 {
-      background-color: #34586e;
-      color: #cdb15b;
-      padding: 16px 24px;
-      margin: 0;
-      max-width: 100%;
-      font-size: 25px;
-      box-sizing: border-box;
-    }
-    .footer {
+    footer {
       background-color: #222;
       color: white;
       text-align: center;
       padding: 20px;
+      margin-top: 40px;
     }
-    .highlight-box strong:hover {
-    font-size: 32px;
-    transition: font-size 0.5s ease;
-  }
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    height: auto;
-    padding: 10px;
-  }
-  nav .right {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .contact-section {
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-  }
-  .contact-section img {
-    margin-bottom: 20px;
-  }
-  .contact-info {
-    margin-left: 0;
-    text-align: center;
-  }
-  .highlight-box {
-    margin: 40px 10px;
-    font-size: 18px;
-    padding: 16px;
-  }
-  .section {
-    padding: 20px;
-  }
-  .section h2 {
-    font-size: 20px;
-    padding: 12px;
-  }
-  .logo-section img,
-  .uk-slider-items img {
-    width: 100% !important;
-    height: auto !important;
-  }
-  .uk-slider-items {
-    height: auto !important;
-  }
-  .uk-slider-nav img {
-    width: 60px;
-  }
-  .section[style*="display: flex"] {
-    flex-direction: column;
-    align-items: center;
-  }
-  .section[style*="display: flex"] img {
-    margin-bottom: 20px;
-  }
-}
-.uk-slider-nav > .uk-active img {
-  border-color: #ffbd59 !important;
-  box-shadow: 0 0 8px rgba(255, 189, 89, 0.8);
-  transform: scale(1.05);
-}
-@keyframes bounce {
-  0% { transform: scale(1); }
-  100% { transform: scale(1.1); }
-}
-</style>
+    @media (max-width: 768px) {
+      .uk-grid > div {
+        width: 100% !important;
+      }
+      .uk-text-meta {
+        padding: 0 10px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -182,6 +68,7 @@
         <strong style="color:white; font-weight:bold;">賴奇勇-大師房屋</strong>
       </a>
     </div>
+  </nav>
     <div class="right">
       <a href="index.html">首頁</a>
       <a href="testimonials.html">客戶這樣說</a>
@@ -203,6 +90,8 @@
 <div class="uk-grid-large uk-grid-match uk-flex-middle" uk-grid>
     
 
+<div class="uk-container uk-margin-large-top uk-margin-large-bottom">
+  <div class="uk-grid-large uk-grid-match uk-flex-middle" uk-grid>
     <!-- 左側：內容資訊 -->
     <div class="uk-width-1-2@m">
       <div class="uk-card uk-card-secondary uk-card-body uk-border-rounded">
@@ -213,22 +102,21 @@
               松山區敦化北路155巷100弄12號
               <img src="https://img.icons8.com/ios-filled/20/000000/google-maps-new.png" alt="地圖圖示" style="margin-left: 6px; vertical-align: middle;">
             </a>
-          </li>
-          <li><div class="uk-h6 uk-float-left">📐 基地面積</div>1461坪</li>
-          <li><div class="uk-h6 uk-float-left">🏠 坪數規劃</div>69～119、139坪</li>
-          <li><div class="uk-h6 uk-float-left">🏢 樓層規劃</div>17F/B3F</li>
-          <li><div class="uk-h6 uk-float-left">🧱 建築設計</div>林泓祥</li>
-          <li><div class="uk-h6 uk-float-left">📊 公設比</div>33%</li>
-          <li><div class="uk-h6 uk-float-left">👨‍👩‍👧‍👦 戶數</div>71戶</li>
-          <li><div class="uk-h6 uk-float-left">🏗 建設公司</div>潤泰創新國際</li>
-          <li><div class="uk-h6 uk-float-left">🗓 完工年份</div>1999年</li>
-          <li><div class="uk-h6 uk-float-left">🧱 結構型式</div>RC（鋼筋混凝土）</li>
+          <li><strong>📍 地址</strong>：<a href="https://www.google.com/maps?q=台北市松山區敦化北路155巷100弄12號" target="_blank">松山區敦化北路155巷100弄12號</a></li>
+          <li><strong>📐 基地面積</strong>：1461坪</li>
+          <li><strong>🏠 坪數規劃</strong>：69～119、139坪</li>
+          <li><strong>🏢 樓層規劃</strong>：17F/B3F</li>
+          <li><strong>🧱 建築設計</strong>：林泓祥</li>
+          <li><strong>📊 公設比</strong>：33%</li>
+          <li><strong>👨‍👩‍👧‍👦 戶數</strong>：71戶</li>
+          <li><strong>🏗 建設公司</strong>：潤泰創新國際</li>
+          <li><strong>🗓 完工年份</strong>：1999年</li>
+          <li><strong>🧱 結構型式</strong>：RC（鋼筋混凝土）</li>
         </ul>
       </div>
     </div>
 
-   <!-- 右側：建築外觀 + 敘述 -->
-    <div class="uk-width-1-2@m uk-text-center">
+   <div class="uk-width-1-2@m uk-text-center">
       <img 
         src="https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg" 
         alt="潤泰敦品 建築外觀" 
@@ -236,12 +124,13 @@
         style="max-width: 100%; height: auto;"
       >
       <div class="uk-text-meta uk-margin-small-top">
-▲ 「潤泰敦品」位於敦化北路155巷100弄2號、民生東路精華地段，基地面積1461坪，由潤泰創新國際投資興建、林泓祥建築師所規劃設計。本案樓層規劃地上17層、地下3層，坪數規劃為69～119、139坪，公設比33%，總戶數71戶，主結構RC，1999年完工。
-「潤泰敦品」絕無僅有的1460坪完整開闊純住宅基地，突破以往高級住宅的規劃和思維，創新呈現台灣頂級豪宅的新風貌。以大坪數、大空間、雄偉外觀造型、挑高氣派門廳、尊貴公共設施、歐洲藝術花園、高科技保全設施與稀有純住宅地段，刷新國人對傳統高級住宅的印象，
-締造台灣建築界頂級豪宅的嶄新里程碑，更是台灣後來豪宅風潮的完美典範。「潤泰敦品」分為大樓與別墅兩種產品，據指出，購買兩棟別墅的主人，其中一位便是尹衍樑的「恩師」，國民黨投管會主委劉泰英；而「李登輝台北辦公室」則是由台灣綜合研究院出資購買。
-</div>
+        ▲ 「潤泰敦品」位於敦化北路155巷100弄2號、民生東路精華地段，基地面積1461坪，由潤泰創新國際投資興建、林泓祥建築師所規劃設計。本案樓層規劃地上17層、地下3層，坪數規劃為69～119、139坪，公設比33%，總戶數71戶，主結構RC，1999年完工。
+        <br><br>
+        「潤泰敦品」絕無僅有的1460坪完整開闊純住宅基地，突破以往高級住宅的規劃和思維，創新呈現台灣頂級豪宅的新風貌。以大坪數、大空間、雄偉外觀造型、挑高氣派門廳、尊貴公共設施、歐洲藝術花園、高科技保全設施與稀有純住宅地段，刷新國人對傳統高級住宅的印象，
+        締造台灣建築界頂級豪宅的嶄新里程碑，更是台灣後來豪宅風潮的完美典範。
+      </div>
+    </div>
   </div>
-   </div>
 
        <!-- 下方 Google 地圖崁入 -->
   <div class="uk-margin-large-top">
