@@ -3,63 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="18年的房仲經驗 | 用家人的心陪您買賣房屋">
   <title>潤泰敦品｜社區介紹｜賴奇勇</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.20/css/uikit.min.css" />
   <style>
     body {
-      font-family: 'Microsoft JhengHei', sans-serif;
+      font-family: "Microsoft JhengHei", sans-serif;
+      margin: 0;
+      padding: 0;
       background-color: #fffaf5;
     }
-    nav {
-      background-color: black;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 20px;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 1000;
-    }
-    nav .left strong {
-      color: white;
-      font-weight: bold;
-    }
-    .uk-container {
-      margin-top: 80px;
-    }
-    .uk-card {
-      background: #f5f5f5;
-    }
-    .uk-text-meta {
-      font-size: 14px;
-      line-height: 1.6;
-      text-align: justify;
-    }
-    iframe {
-      border: none;
-      border-radius: 8px;
-    }
-    footer {
-      background-color: #222;
+    nav, footer {
+      background-color: #000;
       color: white;
       text-align: center;
+      padding: 16px;
+    }
+    .logo {
+      text-align: center;
+      padding: 20px 0;
+    }
+    .logo img {
+      max-width: 200px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
       padding: 20px;
-      margin-top: 40px;
+    }
+    .left-column, .right-column {
+      width: 48%;
+    }
+    .info-box, .contact-box {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .map-section, .description, .contact-section {
+      padding: 20px;
+    }
+    .map-section iframe {
+      width: 100%;
+      height: 350px;
+      border: 0;
+      border-radius: 8px;
+    }
+    .contact-inner {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .contact-inner img {
+      width: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .contact-details p {
+      margin: 6px 0;
     }
     @media (max-width: 768px) {
-      .uk-grid > div {
-        width: 100% !important;
+      .left-column, .right-column {
+        width: 100%;
       }
-      .uk-text-meta {
-        padding: 0 10px;
+      .contact-inner {
+        flex-direction: column;
+        text-align: center;
       }
+    }
+    .floating-line {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+    .floating-line img {
+      height: 60px;
+      animation: bounce 1s infinite alternate;
+      transition: transform 0.3s ease;
+    }
+    @keyframes bounce {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.1); }
     }
   </style>
 </head>
 <body>
+
 
   <nav>
     <div class="left">
@@ -133,59 +161,30 @@
   </div>
 
        <!-- 下方 Google 地圖崁入 -->
-  <div class="uk-margin-large-top">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.654215055813!2d121.55298111167425!3d25.05779283569092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abbd19bdb95f%3A0x93c2c118e7b0df9c!2z5p2x5rCR5aSn5a245a-25Lit5b-D6Zm95Lit5b-D6ZaA5YyX6KW_5bel56iL5a245bq35ZyL56uZ5p2x5Y2A!5e0!3m2!1szh-TW!2stw!4v1713704370000!5m2!1szh-TW!2stw" 
-      width="100%" 
-      height="360" 
-      style="border:0; border-radius: 8px;" 
-      allowfullscreen 
-      loading="lazy">
-    </iframe>
+  <div class="map-section">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.654215055813!2d121.55298111167425!3d25.05779283569092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abbd19bdb95f%3A0x93c2c118e7b0df9c!2z5p2x5rCR5aSn5a245a-25Lit5b-D6Zm95Lit5b-D6ZaA5YyX6KW_5bel56iL5a245bq35ZyL56uZ5p2x5Y2A!5e0!3m2!1szh-TW!2stw!4v1713704370000!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
-</div>
 
-<!-- 聯絡資訊列 -->
- <div class="section" style="display: flex; align-items: flex-start;">
-    <img src="profile.jpg" width="400" height="400" style="border-radius: 50%; margin-right: 40px; object-fit: cover;">
-    <div>
-      <p>📞 想買房、賣屋、不確定怎麼開始？歡迎先聊聊！</p>
-      <p>📱 賴奇勇 📞<a href="tel:0920870278">0920-870-278</a></p>
-      <p>🏠 大師房屋敦北民生加盟營業處 副店長</p>
-      <p>📍 地址：<a href="https://www.google.com/maps?q=台北市松山區民生東路四段130號">台北市松山區民生東路四段130號(光復北路口)</a></p>
-      <p>📜 經紀人證號：102北市經經證字第02056號</p>
-      <p>📜 營業員證號：100登字170931號</p>
-      <p>🔗 <a href="https://line.me/ti/p/N0aCOzISyY" target="_blank">
-  <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" style="height: 28px; vertical-align: middle; margin-right: 12px; margin-top: 8px;">點擊加入我的LINE，一對一私訊快速回覆
-</a></p>
+  <div class="contact-section">
+    <div class="contact-inner">
+      <img src="profile.jpg" alt="賴奇勇 個人照">
+      <div class="contact-details">
+        <p>📱 賴奇勇</p>
+        <p>📞 <a href="tel:0920870278">0920-870-278</a></p>
+        <p>🏠 大師房屋敦北民生加盟營業處 副店長</p>
+        <p>📍 地址：<a href="https://www.google.com/maps?q=台北市松山區民生東路四段130號">台北市松山區民生東路四段130號</a></p>
+        <p>📜 經紀人證號：102北市經經證字第02056號</p>
+        <p>📜 營業員證號：100登字170931號</p>
+        <p>🔗 <a href="https://line.me/ti/p/N0aCOzISyY" target="_blank">點我加入LINE</a></p>
+      </div>
     </div>
   </div>
 
-  <div id="visitor-counter" style="text-align: center; font-size: 16px; margin: 20px 0;"></div>
+  <footer>© 2007 賴奇勇｜大師房屋 敦北民生加盟營業處</footer>
 
-<footer class="bg-dark text-white text-center py-3 mt-5">
-    <div style="background-color: #000; color: white; text-align: center; padding: 20px;">© 2007 賴奇勇｜大師房屋 敦北民生加盟營業處</div>
-  </footer>
+  <a class="floating-line" href="https://line.me/ti/p/N0aCOzISyY" target="_blank">
+    <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入LINE">
+  </a>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.20/js/uikit.min.js"></script>
-  <script>
-    const startDate = new Date('2007-03-01');
-    const today = new Date();
-    let years = today.getFullYear() - startDate.getFullYear();
-    const hasNotReachedAnniversary = today.getMonth() < 2 || (today.getMonth() === 2 && today.getDate() < 1);
-    if (hasNotReachedAnniversary) years--;
-    document.querySelectorAll('#experience-years').forEach(el => el.innerText = years + '年');
-  </script>
-  <!-- Google Analytics 分析程式碼可置於此 -->
-<a href="https://line.me/ti/p/N0aCOzISyY" target="_blank" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
-  <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入LINE" style="height: 60px; transition: transform 0.3s ease; animation: bounce 1s infinite alternate;">
-</a>
-<script>
-  const lineBtn = document.querySelector('a[href*="line.me"] img');
-  if (lineBtn) {
-    lineBtn.addEventListener('mouseover', () => lineBtn.style.transform = 'scale(1.1)');
-    lineBtn.addEventListener('mouseout', () => lineBtn.style.transform = 'scale(1)');
-  }
-</script>
 </body>
 </html>
