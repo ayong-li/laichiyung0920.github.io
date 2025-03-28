@@ -83,25 +83,42 @@
     </div>
   </div>
 
-  <!-- 頁腳 -->
-  <footer class="bg-dark text-white text-center py-3">
-    © 2007 賴奇勇｜大師房屋 敦北民生加盟營業處
-  </footer>
+  <div class="d-flex align-items-start mt-5">
+    <img src="profile.jpg" width="350" height="350" style="border-radius: 50%; margin-right: 30px; object-fit: cover;">
+    <div>
+      <p>📞 想買房、賣屋、不確定怎麼開始？歡迎先聊聊！</p>
+      <p>📱 賴奇勇 <a href="tel:0920870278">0920-870-278</a></p>
+      <p>🏠 大師房屋敦北民生加盟營業處 副店長</p>
+      <p>📍 <a href="https://www.google.com/maps?q=台北市松山區民生東路四段130號" target="_blank">台北市松山區民生東路四段130號</a></p>
+      <p>📜 經紀人證號：102北市經經證字第02056號</p>
+      <p>📜 營業員證號：100登字170931號</p>
+      <p>
+        🔗 <a href="https://line.me/ti/p/N0aCOzISyY" target="_blank">
+          <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" style="height: 28px; vertical-align: middle; margin-right: 8px;">加入我的LINE，快速私訊
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
 
-  <!-- LINE 浮動按鈕 -->
-  <a href="https://line.me/ti/p/N0aCOzISyY" target="_blank" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
-    <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入LINE" style="height: 60px; transition: transform 0.3s ease; animation: bounce 1s infinite alternate;">
-  </a>
+<div id="visitor-counter" style="text-align: center; font-size: 16px; margin: 30px 0;"></div>
 
-  <!-- JS -->
-  <script>
-    const startDate = new Date('2007-03-01');
-    const today = new Date();
-    let years = today.getFullYear() - startDate.getFullYear();
-    const hasNotReachedAnniversary = today.getMonth() < 2 || (today.getMonth() === 2 && today.getDate() < 1);
-    if (hasNotReachedAnniversary) years--;
-    document.querySelectorAll('#experience-years').forEach(el => el.innerText = years + '年');
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<footer class="bg-dark text-white text-center py-4">
+  © 2007 賴奇勇｜大師房屋 敦北民生加盟營業處
+</footer>
+
+<!-- 浮動 LINE 按鈕 -->
+<a href="https://line.me/ti/p/N0aCOzISyY" target="_blank" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
+  <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入LINE" style="height: 60px; transition: transform 0.3s ease; animation: bounce 1s infinite alternate;">
+</a>
+
+<script>
+  const lineBtn = document.querySelector('a[href*="line.me"] img');
+  if (lineBtn) {
+    lineBtn.addEventListener('mouseover', () => lineBtn.style.transform = 'scale(1.1)');
+    lineBtn.addEventListener('mouseout', () => lineBtn.style.transform = 'scale(1)');
+  }
+</script>
+
 </body>
 </html>
