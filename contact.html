@@ -79,8 +79,24 @@
     <img src="store.jpg" alt="店面照片" class="store-photo">
       </div>
 
-  <footer>
-    © 2025 <strong style="color: #007bff;">賴奇勇</strong>｜大師房屋 敦北民生加盟營業處
-  </footer>
+  <div id="visitor-counter" style="text-align: center; font-size: 16px; margin: 30px 0;"></div>
+
+<footer class="bg-dark text-white text-center py-4">
+  © 2007 賴奇勇｜大師房屋 敦北民生加盟營業處
+</footer>
+
+  <!-- 浮動 LINE 按鈕 -->
+<a href="https://line.me/ti/p/N0aCOzISyY" target="_blank" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
+  <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入LINE" style="height: 60px; transition: transform 0.3s ease; animation: bounce 1s infinite alternate;">
+</a>
+
+<script>
+  const lineBtn = document.querySelector('a[href*="line.me"] img');
+  if (lineBtn) {
+    lineBtn.addEventListener('mouseover', () => lineBtn.style.transform = 'scale(1.1)');
+    lineBtn.addEventListener('mouseout', () => lineBtn.style.transform = 'scale(1)');
+  }
+</script>
+
 </body>
 </html>
