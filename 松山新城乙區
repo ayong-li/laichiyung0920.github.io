@@ -1,0 +1,116 @@
+from IPython.display import display, HTML
+
+html_code = """
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>松山新城乙區｜社區介紹｜賴奇勇</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.20/dist/css/uikit.min.css">
+  <style>
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      background-color: #fffaf5;
+    }
+    footer {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 導覽列 -->
+<nav class="uk-navbar-container uk-navbar-transparent uk-background-secondary uk-light" uk-navbar>
+  <div class="uk-navbar-left">
+    <a class="uk-navbar-item uk-logo" href="index.html"><strong>賴奇勇-大師房屋</strong></a>
+  </div>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="testimonials.html">客戶這樣說</a></li>
+      <li><a href="resume.html">自我介紹</a></li>
+      <li><a href="社區介紹.html">社區介紹</a></li>
+      <li><a href="realpricelogin.html">時價登錄</a></li>
+      <li><a href="買賣房注意事項.html">買賣注意事項</a></li>
+      <li><a href="contact.html">地圖</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- 主圖片區 -->
+<div class="uk-margin uk-width-xlarge@l uk-margin-auto uk-text-center">
+  <img 
+    src="https://luxuryhome.tw/templates/yootheme/cache/08-3-b18c4d35.webp"
+    srcset="https://luxuryhome.tw/templates/yootheme/cache/08-3-b18c4d35.webp 600w, 
+            https://luxuryhome.tw/templates/yootheme/cache/08-3-d885534d.webp 768w, 
+            https://luxuryhome.tw/templates/yootheme/cache/08-3-2019cbf3.webp 848w"
+    sizes="(min-width: 600px) 600px"
+    alt="松山新城乙區 建築外觀"
+    width="849"
+    height="714"
+    class="uk-border-rounded uk-box-shadow-small"
+    uk-img
+  >
+</div>
+
+<!-- 內容區塊 -->
+<div class="uk-container uk-margin-large-top uk-margin-large-bottom">
+  <div class="uk-card uk-card-secondary uk-card-large uk-card-body uk-width-xlarge@l uk-margin-auto" id="details">
+    <h2 class="el-title uk-h4 uk-text-primary uk-margin-top uk-text-center">松山新城乙區</h2>
+    <ul class="uk-list uk-list-divider uk-margin-top">
+      <li><div class="uk-h6 uk-float-left">📍 地址</div>松山區敦化北路155巷100弄2～16-1號</li>
+      <li><div class="uk-h6 uk-float-left">📐 基地面積</div>1461坪</li>
+      <li><div class="uk-h6 uk-float-left">🏠 坪數規劃</div>69～119、139坪</li>
+      <li><div class="uk-h6 uk-float-left">🏢 樓層規劃</div>17F/B3F</li>
+      <li><div class="uk-h6 uk-float-left">🧱 建築設計</div>林泓祥</li>
+      <li><div class="uk-h6 uk-float-left">📊 公設比</div>33%</li>
+      <li><div class="uk-h6 uk-float-left">👨‍👩‍👧‍👦 戶數</div>71戶</li>
+      <li><div class="uk-h6 uk-float-left">🏗 建設公司</div>潤泰創新國際</li>
+      <li><div class="uk-h6 uk-float-left">🗓 完工年份</div>1999年</li>
+      <li><div class="uk-h6 uk-float-left">🧱 結構型式</div>RC（鋼筋混凝土）</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 訪客計數器 -->
+<div id="visitor-counter" style="text-align: center; font-size: 16px; margin: 30px 0;"></div>
+
+<!-- 頁腳 -->
+<footer class="bg-dark text-white text-center py-4">
+  © 2007 賴奇勇｜大師房屋 敦北民生加盟營業處
+</footer>
+
+<!-- Script -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.20/dist/js/uikit.min.js"></script>
+<script>
+  fetch('https://api.countapi.xyz/hit/laichiyung0920.github.io/visits')
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById('visitor-counter').innerHTML = 
+        '<img src="https://img.icons8.com/ios-filled/50/000000/visible--v1.png" style="width: 24px; vertical-align: middle; margin-right: 8px;">' +
+        '這個網站已被瀏覽 <strong>' + data.value.toLocaleString() + '</strong> 次';
+    });
+</script>
+
+<!-- 浮動 LINE 按鈕 -->
+<a href="https://line.me/ti/p/N0aCOzISyY" target="_blank" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
+  <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入LINE" style="height: 60px; transition: transform 0.3s ease; animation: bounce 1s infinite alternate;">
+</a>
+<script>
+  const lineBtn = document.querySelector('a[href*="line.me"] img');
+  if (lineBtn) {
+    lineBtn.addEventListener('mouseover', () => lineBtn.style.transform = 'scale(1.1)');
+    lineBtn.addEventListener('mouseout', () => lineBtn.style.transform = 'scale(1)');
+  }
+</script>
+
+</body>
+</html>
+"""
+
+display(HTML(html_code))
