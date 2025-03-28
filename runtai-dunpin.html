@@ -17,41 +17,54 @@
       padding: 20px;
       margin-top: 60px;
     }
+    .uk-card-secondary {
+      background-color: #333; /* 黑色背景 */
+      color: #fff;
+    }
+    .uk-card-secondary .uk-h6 {
+      color: #ffbd59;
+    }
+    .uk-card-secondary li {
+      border-bottom: 1px solid #555;
+      padding: 8px 0;
+    }
   </style>
 </head>
 <body>
 
 <!-- 導覽列 -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html"><strong>賴奇勇-大師房屋</strong></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
-        <li class="nav-item"><a class="nav-link" href="testimonials.html">客戶這樣說</a></li>
-        <li class="nav-item"><a class="nav-link" href="resume.html">自我介紹</a></li>
-        <li class="nav-item"><a class="nav-link" href="社區介紹.html">社區介紹</a></li>
-        <li class="nav-item"><a class="nav-link" href="realpricelogin.html">實價登錄</a></li>
-        <li class="nav-item"><a class="nav-link" href="買賣房注意事項.html">買賣房注意事項</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">地圖</a></li>
-      </ul>
-    </div>
+<nav class="uk-navbar-container uk-navbar-transparent uk-background-secondary uk-light" uk-navbar>
+  <div class="uk-navbar-left">
+    <a class="uk-navbar-item uk-logo" href="index.html"><strong>賴奇勇-大師房屋</strong></a>
+  </div>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="testimonials.html">客戶這樣說</a></li>
+      <li><a href="resume.html">自我介紹</a></li>
+      <li><a href="社區介紹.html">社區介紹</a></li>
+      <li><a href="realpricelogin.html">實價登錄</a></li>
+      <li><a href="買賣房注意事項.html">買賣房注意事項</a></li>
+      <li><a href="contact.html">地圖</a></li>
+    </ul>
   </div>
 </nav>
 
-
+<!-- 主內容 -->
 <div class="uk-container uk-margin-large-top uk-margin-large-bottom">
   <div class="uk-grid-large uk-child-width-expand@s uk-flex-middle" uk-grid>
-
- <!-- 內容區塊 -->
+    
+    <!-- 左側：內容區塊 -->
     <div>
-      <div class="uk-card uk-card-secondary uk-card-large uk-card-body">
-        <h2 class="el-title uk-h4 uk-text-primary uk-text-center">潤泰敦品</h2>
-        <ul class="uk-list uk-list-divider uk-margin-top">
-          <li><div class="uk-h6 uk-float-left">📍 地址</div>松山區敦化北路155巷100弄2～16-1號</li>
+      <div class="uk-card uk-card-secondary uk-card-body uk-border-rounded">
+        <h2 class="uk-text-center">潤泰敦品</h2>
+        <ul class="uk-list uk-list-divider">
+          <li><div class="uk-h6 uk-float-left">📍 地址</div>
+  <a href="https://www.google.com/maps?q=台北市松山區敦化北路155巷100弄12號" target="_blank">
+    松山區敦化北路155巷100弄12號
+    <img src="https://img.icons8.com/ios-filled/20/000000/google-maps-new.png" alt="地圖圖示" style="margin-left: 6px; vertical-align: middle;">
+  </a>
+</li>
           <li><div class="uk-h6 uk-float-left">📐 基地面積</div>1461坪</li>
           <li><div class="uk-h6 uk-float-left">🏠 坪數規劃</div>69～119、139坪</li>
           <li><div class="uk-h6 uk-float-left">🏢 樓層規劃</div>17F/B3F</li>
@@ -65,7 +78,8 @@
       </div>
     </div>
 
-<div class="uk-text-center">
+    <!-- 右側：圖片 -->
+    <div class="uk-text-center">
       <img 
         src="https://luxuryhome.tw/templates/yootheme/cache/08-3-b18c4d35.webp"
         srcset="https://luxuryhome.tw/templates/yootheme/cache/08-3-b18c4d35.webp 600w, 
@@ -73,18 +87,29 @@
                 https://luxuryhome.tw/templates/yootheme/cache/08-3-2019cbf3.webp 848w"
         sizes="(min-width: 600px) 600px"
         alt="潤泰敦品 建築外觀"
-        width="100%"
         class="uk-border-rounded uk-box-shadow-small"
+        style="max-width: 100%; height: auto;"
         uk-img
       >
       <div class="uk-text-meta uk-margin-small-top">▲ 潤泰敦品建築外觀，質感與格局兼具</div>
-    </div>
+      </div>
 
   </div>
 </div>
+<div class="uk-margin-top">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.654215055813!2d121.55298111167425!3d25.05779283569092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abbd19bdb95f%3A0x93c2c118e7b0df9c!2z5p2x5rCR5aSn5a245a-25Lit5b-D6Zm95Lit5b-D6ZaA5YyX6KW_5bel56iL5a245bq35ZyL56uZ5p2x5Y2A!5e0!3m2!1szh-TW!2stw!4v1713704370000!5m2!1szh-TW!2stw" 
+    width="100%" 
+    height="300" 
+    style="border:0; border-radius: 8px;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
 
 <!-- 頁腳 -->
-<footer class="bg-dark text-white text-center py-4">
+<footer>
   © 2007 賴奇勇｜大師房屋 敦北民生加盟營業處
 </footer>
 
