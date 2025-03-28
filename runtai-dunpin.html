@@ -3,90 +3,200 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>潤泰敦品｜社區介紹｜賴奇勇</title>
+  <meta name="description" content="18年的房仲經驗 | 用家人的心陪您買賣房屋">
+  <title>大師房屋敦北民生加盟營業處 賴奇勇</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.20/css/uikit.min.css" />
   <style>
     body {
-      font-family: "Microsoft JhengHei", sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fffaf5;
+      font-family: 'Microsoft JhengHei', sans-serif;
     }
-    nav, footer {
-      background-color: #000;
-      color: white;
-      text-align: center;
-      padding: 16px;
+    nav {
+  background-color: black;
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+    nav img {
+      height: 40px;
+      margin-right: 10px;
     }
-    .logo {
-      text-align: center;
-      padding: 20px 0;
-    }
-    .logo img {
-      max-width: 200px;
-    }
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      padding: 20px;
-    }
-    .left-column, .right-column {
-      width: 48%;
-    }
-    .info-box, .contact-box {
-      background-color: #f0f0f0;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    .map-section, .description, .contact-section {
-      padding: 20px;
-    }
-    .map-section iframe {
-      width: 100%;
-      height: 350px;
-      border: 0;
-      border-radius: 8px;
-    }
-    .contact-inner {
+    nav .left {
       display: flex;
       align-items: center;
-      gap: 20px;
     }
-    .contact-inner img {
-      width: 150px;
-      border-radius: 50%;
+    nav .right a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    nav .right input[type="search"] {
+      background-color: #cdb15b;
+      border: none;
+      padding: 5px;
+    }
+    .logo-section {
+      margin-top: 60px;
+      text-align: center;
+    }
+    h1 {
+      color: #866a13;
+      font-size: 28px;
+      text-align: center;
+    }
+    .contact-section {
+      display: flex;
+      align-items: center;
+      margin: 50px;
+    }
+    .contact-section img {
+      width: 300px;
+      height: 300px;
       object-fit: cover;
     }
-    .contact-details p {
-      margin: 6px 0;
+    .contact-info {
+      margin-left: 100px;
+      font-size: 18px;
     }
-    @media (max-width: 768px) {
-      .left-column, .right-column {
-        width: 100%;
-      }
-      .contact-inner {
-        flex-direction: column;
-        text-align: center;
-      }
+    .highlight-box {
+      background-color: #34586e;
+      color: #cdb15b;
+      padding: 20px;
+      margin: 150px 40px 40px;
+      font-size: 20px;
     }
-    .floating-line {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
+    .uk-slider-items img {
+      border: 5px solid #eee;
+      transition: transform 0.3s;
     }
-    .floating-line img {
-      height: 60px;
-      animation: bounce 1s infinite alternate;
-      transition: transform 0.3s ease;
+    .uk-slider-items img:hover {
+      transform: scale(1.02);
     }
-    @keyframes bounce {
-      0% { transform: scale(1); }
-      100% { transform: scale(1.1); }
+    .center-title {
+      text-align: center;
+      font-size: 24px;
+      color: #9f1120;
+      margin: 40px 0;
     }
-  </style>
+    .section {
+      padding: 40px;
+    }
+    .section h2 {
+      background-color: #34586e;
+      color: #cdb15b;
+      padding: 16px 24px;
+      margin: 0;
+      max-width: 100%;
+      font-size: 25px;
+      box-sizing: border-box;
+    }
+    .footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .highlight-box strong:hover {
+    font-size: 32px;
+    transition: font-size 0.5s ease;
+  }
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  nav .right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  .contact-section img {
+    margin-bottom: 20px;
+  }
+  .contact-info {
+    margin-left: 0;
+    text-align: center;
+  }
+  .highlight-box {
+    margin: 40px 10px;
+    font-size: 18px;
+    padding: 16px;
+  }
+  .section {
+    padding: 20px;
+  }
+  .section h2 {
+    font-size: 20px;
+    padding: 12px;
+  }
+  .logo-section img,
+  .uk-slider-items img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .uk-slider-items {
+    height: auto !important;
+  }
+  .uk-slider-nav img {
+    width: 60px;
+  }
+  .section[style*="display: flex"] {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section[style*="display: flex"] img {
+    margin-bottom: 20px;
+  }
+}
+.uk-slider-nav > .uk-active img {
+  border-color: #ffbd59 !important;
+  box-shadow: 0 0 8px rgba(255, 189, 89, 0.8);
+  transform: scale(1.05);
+}
+@keyframes bounce {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+</style>
 </head>
 <body>
+
+  <nav>
+    <div class="left">
+      <a href="index.html">
+        
+        <strong style="color:white; font-weight:bold;">賴奇勇-大師房屋</strong>
+      </a>
+    </div>
+    <div class="right">
+      <a href="index.html">首頁</a>
+      <a href="testimonials.html">客戶這樣說</a>
+      <a href="resume.html">自我介紹</a>
+      <a href="社區介紹.html">社區介紹</a>
+      <a href="realpricelogin.html">實價登錄</a>
+      <a href="買賣房注意事項.html">買賣房注意事項</a>
+      <a href="contact.html">地圖</a>
+      <input name="searchword" placeholder="搜尋" type="search" class="uk-search-input" title="搜尋 賴奇勇" style="width: 120px;">
+    </div>
+  </nav>
+
+  <div class="logo-section">
+    <img src="logo.png" alt="公司LOGO">
+  </div>
 
 
   <nav>
