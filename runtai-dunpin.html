@@ -369,7 +369,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     const phone = document.getElementById("phone").value.trim();
     const message = document.getElementById("message").value.trim();
 
-    const token = "你的LINE Notify權杖"; // ← 請放你的 LINE Notify 權杖
+    const token = "https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png"; // ← 請放你的 LINE Notify 權杖
     const text = `【新表單來信】\n稱呼：${name}\n電話：${phone}\n留言：${message}`;
 
     fetch("https://notify-api.line.me/api/notify", {
