@@ -171,12 +171,15 @@
   0% { transform: scale(1); }
   100% { transform: scale(1.1); }
 }
+  
 .contact-form form {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  }
+  text-align: center;  
+  background: #f9f9f9;
+  padding: 20px 24px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  border: 1px solid #ddd;
+}
   .contact-form label {
     display: block;
     margin-bottom: 6px;
@@ -196,14 +199,16 @@
     resize: vertical;
   }
   .contact-form button {
-    background-color: #c69f2c;
-    color: white;
-    padding: 10px 24px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-  }
+  display: inline-block;  
+  background-color: #c69f2c;
+  color: white;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
   .contact-form button:hover {
     background-color: #9e7d1d;
   }    
@@ -310,32 +315,22 @@
 </a></p>
     </div>
   </div>
-<div class="uk-width-expand@m">
-  <form id="contactForm" class="uk-form-stacked">
-    <div class="uk-margin">
-      <label class="uk-form-label" for="name">稱呼</label>
-      <div class="uk-form-controls">
-        <input class="uk-input" id="name" name="name" type="text" placeholder="請輸入您的稱呼" required>
-      </div>
-    </div>
+<!-- 右：聯絡表單 -->
+  <div class="contact-form" style="flex: 2; min-width: 320px;">
+    <form>
+      <label for="name">稱呼</label>
+      <input type="text" id="name" name="name" placeholder="請輸入您的稱呼" required>
 
-    <div class="uk-margin">
-      <label class="uk-form-label" for="phone">電話 (必填)</label>
-      <div class="uk-form-controls">
-        <input class="uk-input" id="phone" name="phone" type="tel" placeholder="0912xxxxxx" required>
-      </div>
-    </div>
+      <label for="phone">電話 (必填)</label>
+      <input type="tel" id="phone" name="phone" placeholder="0912xxxxxx" required>
 
-    <div class="uk-margin">
-      <label class="uk-form-label" for="message">留言 (選填)</label>
-      <div class="uk-form-controls">
-        <textarea class="uk-textarea" id="message" name="message" rows="5" placeholder="請留下想說的話"></textarea>
-      </div>
-    </div>
-<div class="uk-margin">
-      <button type="submit" class="uk-button uk-button-danger">立即送出</button>
-    </div>
-  </form>
+      <label for="message">留言 (選填)</label>
+      <textarea id="message" name="message" rows="5" placeholder="您的需求或問題..."></textarea>
+
+      <button type="submit">傳送</button>
+    </form>
+  </div>
+
 </div>
   <div id="visitor-counter" style="text-align: center; font-size: 16px; margin: 20px 0;"></div>
 
