@@ -171,7 +171,42 @@
   0% { transform: scale(1); }
   100% { transform: scale(1.1); }
 }
-    
+.contact-form form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  .contact-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+  .contact-form textarea {
+    resize: vertical;
+  }
+  .contact-form button {
+    background-color: #c69f2c;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .contact-form button:hover {
+    background-color: #9e7d1d;
+  }    
 </style>
 </head>
 <body>
@@ -275,7 +310,33 @@
 </a></p>
     </div>
   </div>
+<div class="uk-width-expand@m">
+  <form id="contactForm" class="uk-form-stacked">
+    <div class="uk-margin">
+      <label class="uk-form-label" for="name">稱呼</label>
+      <div class="uk-form-controls">
+        <input class="uk-input" id="name" name="name" type="text" placeholder="請輸入您的稱呼" required>
+      </div>
+    </div>
 
+    <div class="uk-margin">
+      <label class="uk-form-label" for="phone">電話 (必填)</label>
+      <div class="uk-form-controls">
+        <input class="uk-input" id="phone" name="phone" type="tel" placeholder="0912xxxxxx" required>
+      </div>
+    </div>
+
+    <div class="uk-margin">
+      <label class="uk-form-label" for="message">留言 (選填)</label>
+      <div class="uk-form-controls">
+        <textarea class="uk-textarea" id="message" name="message" rows="5" placeholder="請留下想說的話"></textarea>
+      </div>
+    </div>
+<div class="uk-margin">
+      <button type="submit" class="uk-button uk-button-danger">立即送出</button>
+    </div>
+  </form>
+</div>
   <div id="visitor-counter" style="text-align: center; font-size: 16px; margin: 20px 0;"></div>
 
 <footer class="bg-dark text-white text-center py-3 mt-5">
@@ -301,6 +362,34 @@
     lineBtn.addEventListener('mouseover', () => lineBtn.style.transform = 'scale(1.1)');
     lineBtn.addEventListener('mouseout', () => lineBtn.style.transform = 'scale(1)');
   }
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const token = "你的LINE Notify權杖"; // ← 請放你的 LINE Notify 權杖
+    const text = `【新表單來信】\n稱呼：${name}\n電話：${phone}\n留言：${message}`;
+
+    fetch("https://notify-api.line.me/api/notify", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Authorization": "Bearer " + token,
+      },
+      body: "message=" + encodeURIComponent(text),
+    })
+    .then(res => {
+      if (res.ok) {
+        alert("✅ 表單送出成功，感謝您的留言！");
+        window.location.href = "thankyou.html"; // ← 成功轉跳頁面
+      } else {
+        alert("❌ 發送失敗，請稍後再試");
+      }
+    })
+    .catch(() => alert("❌ 系統異常，請稍後再試"));
+  });
 </script>
 </body>
 </html>
