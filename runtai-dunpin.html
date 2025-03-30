@@ -223,6 +223,21 @@
     margin: 0 auto;
   }
 }
+.watermark-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.watermark-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.4); /* 白色 + 透明度 */
+  font-size: 28px;
+  font-weight: bold;
+  pointer-events: none;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
 </style>
 </head>
 <body>
@@ -287,24 +302,31 @@
     <ul class="uk-slideshow-items">
       <li>
         <img src="https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg" alt="潤泰敦品 建築外觀" class="uk-border-rounded uk-box-shadow-small" style="max-width: 100%; height: auto;" uk-cover>
+        <div class="watermark-text">賴奇勇 大師房屋</div>
       </li>
       <li>
         <img src="https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品2.jpg" alt="潤泰敦品 建築外觀2" class="uk-border-rounded uk-box-shadow-small" style="max-width: 100%; height: auto;" uk-cover>
+        <div class="watermark-text">賴奇勇 大師房屋</div>
       </li>
       <li>
         <img src="https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品3.jpg" alt="潤泰敦品 建築外觀2" class="uk-border-rounded uk-box-shadow-small" style="max-width: 100%; height: auto;" uk-cover>
+        <div class="watermark-text">賴奇勇 大師房屋</div>
       </li>
       <li>
         <img src="https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品4.jpg" alt="潤泰敦品 建築外觀2" class="uk-border-rounded uk-box-shadow-small" style="max-width: 100%; height: auto;" uk-cover>
+        <div class="watermark-text">賴奇勇 大師房屋</div>
       </li>
       <li>
         <img src="https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品5.jpg" alt="潤泰敦品 建築外觀2" class="uk-border-rounded uk-box-shadow-small" style="max-width: 100%; height: auto;" uk-cover>
+        <div class="watermark-text">賴奇勇 大師房屋</div>
       </li>
       <li>
         <img src="https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品6.jpg" alt="潤泰敦品 建築外觀2" class="uk-border-rounded uk-box-shadow-small" style="max-width: 100%; height: auto;" uk-cover>
+        <div class="watermark-text">賴奇勇 大師房屋</div>
       </li>
       <li>
         <img src="https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品7.jpg" alt="潤泰敦品 建築外觀2" class="uk-border-rounded uk-box-shadow-small" style="max-width: 100%; height: auto;" uk-cover>
+        <div class="watermark-text">賴奇勇 大師房屋</div>
       </li>
     </ul>
 
