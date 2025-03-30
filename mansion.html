@@ -48,7 +48,26 @@
       text-align: center;
       margin-top: 40px;
     }
-  
+  /* 放在 <style> 中或 CSS 檔案中 */
+.community-banner {
+  background-image: url('https://laichiyung0920.github.io/Community%20overview.png');
+  background-size: cover;
+  background-position: center;
+  height: 280px;
+  position: relative;
+  display: flex;
+  align-items: flex-end; /* 文字靠底部 */
+  justify-content: flex-end; /* 靠右 */
+  padding: 20px 30px;
+}
+
+.community-title {
+  font-size: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0); /* 透明背景 */
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6); /* 讓白字更清楚 */
+  margin: 0;
+}
   </style>
 </head>
 <body>
@@ -70,29 +89,10 @@
   </div>
 </nav>
 
-<!-- 輪播區塊 -->
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 3000">
-  <ul class="uk-slideshow-items">
-    <li><img src="https://laichiyung0920.github.io/Community overview.png" alt="社區總覽1" uk-cover></li>
-    <li><img src="https://laichiyung0920.github.io/Community overview1.png" alt="社區總覽2" uk-cover></li>
-    <li><img src="https://laichiyung0920.github.io/Community overview2.png" alt="社區總覽3" uk-cover></li>
-    <li><img src="https://laichiyung0920.github.io/Community overview3.png" alt="社區總覽4" uk-cover></li>
-  </ul>
-
-  <!-- 透明無底的文字 -->
-  <div class="uk-position-center uk-text-center">
-    <h2 style="font-size: 40px; color: white; text-shadow: 1px 1px 4px rgba(0,0,0,0.6);">🏙 社區總覽</h2>
-  </div>
+<!-- 放在 HTML 的適當位置 -->
+<div class="community-banner">
+  <h2 class="community-title">🏙 社區總覽</h2>
 </div>
-
-  <!-- 區域篩選按鈕 -->
-  <ul class="uk-subnav uk-subnav-pill uk-flex-center" uk-margin>
-    <li class="uk-active" uk-filter-control><a href="#">全部</a></li>
-    <li uk-filter-control="[data-tag*='松山']"><a href="#">松山</a></li>
-    <li uk-filter-control="[data-tag*='中山']"><a href="#">中山</a></li>
-    <li uk-filter-control="[data-tag*='信義']"><a href="#">信義</a></li>
-    <li uk-filter-control="[data-tag*='大安']"><a href="#">大安</a></li>
-  </ul>
 
   <!-- 社區卡片區 -->
   <div class="uk-child-width-1-3@s uk-grid-small uk-grid-match filter-list" uk-grid uk-filter="target: .filter-list">
