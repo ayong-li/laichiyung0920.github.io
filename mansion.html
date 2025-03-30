@@ -71,7 +71,6 @@
 
 <!-- 輪播區塊 -->
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 3000">
-
   <ul class="uk-slideshow-items">
     <li><img src="https://laichiyung0920.github.io/社區總覽.png" alt="社區總覽1" uk-cover></li>
     <li><img src="https://laichiyung0920.github.io/社區總覽1.png" alt="社區總覽2" uk-cover></li>
@@ -79,36 +78,11 @@
     <li><img src="https://laichiyung0920.github.io/社區總覽3.png" alt="社區總覽4" uk-cover></li>
   </ul>
 
-  <!-- 浮動標題（動畫） -->
-  <div class="uk-position-center uk-text-center animated-title">
-    <h2>🏙 社區總覽</h2>
+  <!-- 透明無底的文字 -->
+  <div class="uk-position-center uk-text-center">
+    <h2 style="font-size: 30px; color: white; text-shadow: 1px 1px 4px rgba(0,0,0,0.6);">🏙 社區總覽</h2>
   </div>
 </div>
-
-<!-- 動畫樣式 -->
-<style>
-.animated-title h2 {
-  font-size: 30px;
-  color: white;
-  text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
-  opacity: 0;
-  animation: fadeFloatIn 2s ease-out forwards;
-  animation-delay: 1s;
-}
-
-/* 動畫關鍵影格 */
-@keyframes fadeFloatIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style>
-
 
   <!-- 區域篩選按鈕 -->
   <ul class="uk-subnav uk-subnav-pill uk-flex-center" uk-margin>
