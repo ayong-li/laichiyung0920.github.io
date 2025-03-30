@@ -29,9 +29,11 @@
       border: none;
     }
     .uk-card-media-top img {
-      height: 180px;
-      object-fit: cover;
-      width: 100%;
+      width: 100%;               /* 填滿卡片寬度 */
+      height: 200px;             /* 高度固定 */
+      object-fit: cover;         /* 超出部分裁切，保持比例 */
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
     }
     .uk-card-title {
       font-size: 18px;
