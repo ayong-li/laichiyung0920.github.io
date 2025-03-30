@@ -58,10 +58,13 @@
     <a href="index.html" style="color:white; font-weight:bold;">賴奇勇 - 大師房屋</a>
   </div>
   <div class="right">
-    <a href="#">首頁</a>
-    <a href="#">社區介紹</a>
-    <a href="#">實價登錄</a>
-    <a href="#">地圖</a>
+    <a href="index.html">首頁</a>
+    <a href="testimonials.html">客戶這樣說</a>
+    <a href="resume.html">自我介紹</a>
+    <a href="mansion.html">社區介紹</a>
+    <a href="realpricelogin.html">實價登錄</a>
+    <a href="買賣房注意事項.html">買賣房注意事項</a>
+    <a href="contact.html">地圖</a>
     <input type="search" placeholder="搜尋社區">
   </div>
 </nav>
