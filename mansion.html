@@ -48,26 +48,24 @@
       text-align: center;
       margin-top: 40px;
     }
-  /* 放在 <style> 中或 CSS 檔案中 */
+  /* 放在 <style> 或外部CSS中 */
 .community-banner {
-  background-image: url('https://laichiyung0920.github.io/Community%20overview.png');
+  background-image: url('照片1.jpg'); /* 圖片放在同目錄或可用網址 */
   background-size: cover;
   background-position: center;
   height: 280px;
-  position: relative;
   display: flex;
-  align-items: flex-end; /* 文字靠底部 */
-  justify-content: flex-end; /* 靠右 */
+  align-items: flex-end;  /* 讓文字靠底部 */
   padding: 20px 30px;
+  position: relative;
 }
 
 .community-title {
   font-size: 30px;
   color: white;
-  background-color: rgba(0, 0, 0, 0); /* 透明背景 */
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6); /* 讓白字更清楚 */
+  background-color: rgba(0, 0, 0, 0); /* 完全透明背景 */
   margin: 0;
-}
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.6); /* 增強白字對比度 */
   </style>
 </head>
 <body>
@@ -89,7 +87,7 @@
   </div>
 </nav>
 
-<!-- 放在 HTML 的適當位置 -->
+<!-- 放在你的社區總覽區塊上方 -->
 <div class="community-banner">
   <h2 class="community-title">🏙 社區總覽</h2>
 </div>
