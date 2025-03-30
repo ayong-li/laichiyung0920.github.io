@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>社區總覽｜賴奇勇 大師房屋</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.20/dist/css/uikit.min.css">
+  <style>
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      background-color: #fffaf5;
+    }
+    nav {
+      background: #000;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .right a {
+      color: white;
+      margin-left: 12px;
+      text-decoration: none;
+    }
+    nav input[type="search"] {
+      margin-left: 16px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      border: none;
+    }
+    .uk-card-media-top img {
+      height: 180px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .uk-card-title {
+      font-size: 18px;
+      color: #a10e0e;
+    }
+    .uk-card-body p {
+      font-size: 14px;
+      color: #444;
+    }
+    footer {
+      background-color: #000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 導覽列 -->
+<nav>
+  <div class="left">
+    <a href="index.html" style="color:white; font-weight:bold;">賴奇勇 - 大師房屋</a>
+  </div>
+  <div class="right">
+    <a href="#">首頁</a>
+    <a href="#">社區介紹</a>
+    <a href="#">實價登錄</a>
+    <a href="#">地圖</a>
+    <input type="search" placeholder="搜尋社區">
+  </div>
+</nav>
+
+<!-- 輪播區塊 -->
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 3000">
+
+  <ul class="uk-slideshow-items">
+    <li><img src="https://laichiyung0920.github.io/社區總覽.png" alt="社區總覽1" uk-cover></li>
+    <li><img src="https://laichiyung0920.github.io/社區總覽1.png" alt="社區總覽2" uk-cover></li>
+    <li><img src="https://laichiyung0920.github.io/社區總覽2.png" alt="社區總覽3" uk-cover></li>
+    <li><img src="https://laichiyung0920.github.io/社區總覽3.png" alt="社區總覽4" uk-cover></li>
+  </ul>
+
+  <!-- 浮動標題（動畫） -->
+  <div class="uk-position-center uk-text-center animated-title">
+    <h2>🏙 社區總覽</h2>
+  </div>
+</div>
+
+<!-- 動畫樣式 -->
+<style>
+.animated-title h2 {
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+  opacity: 0;
+  animation: fadeFloatIn 2s ease-out forwards;
+  animation-delay: 1s;
+}
+
+/* 動畫關鍵影格 */
+@keyframes fadeFloatIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+
+
+  <!-- 區域篩選按鈕 -->
+  <ul class="uk-subnav uk-subnav-pill uk-flex-center" uk-margin>
+    <li class="uk-active" uk-filter-control><a href="#">全部</a></li>
+    <li uk-filter-control="[data-tag*='松山']"><a href="#">松山</a></li>
+    <li uk-filter-control="[data-tag*='中山']"><a href="#">中山</a></li>
+    <li uk-filter-control="[data-tag*='信義']"><a href="#">信義</a></li>
+    <li uk-filter-control="[data-tag*='大安']"><a href="#">大安</a></li>
+  </ul>
+
+  <!-- 社區卡片區 -->
+  <div class="uk-child-width-1-3@s uk-grid-small uk-grid-match filter-list" uk-grid uk-filter="target: .filter-list">
+
+    <!-- 松山 -->
+    <div data-tag="松山">
+    <a href="https://laichiyung0920.github.io/runtai-dunpin.html" style="text-decoration: none; color: inherit;">
+      <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+        <div class="uk-card-media-top">
+          <img src="https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg" alt="潤泰敦品">
+        </div>
+        <div class="uk-card-body">
+          <h4 class="uk-card-title">潤泰敦品</h4>
+          <p>敦化北路百坪大戶｜1999年完工｜潤泰創新建設</p>
+        </div>
+    </div>
+  </a>
+</div>
+
+    <!-- 中山 -->
+    <div data-tag="中山">
+    <a href="https://laichiyung0920.github.io/runtai-dunpin.html" style="text-decoration: none; color: inherit;">
+      <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+        <div class="uk-card-media-top">
+          <img src="https://via.placeholder.com/400x250?text=中山社區" alt="中山社區">
+        </div>
+        <div class="uk-card-body">
+          <h4 class="uk-card-title">中山社區</h4>
+          <p>中山區優質地段，生活便利</p>
+        </div>
+    </div>
+  </a>
+</div>
+
+    <!-- 信義 -->
+    <div data-tag="信義">
+    <a href="https://laichiyung0920.github.io/runtai-dunpin.html" style="text-decoration: none; color: inherit;">
+      <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+        <div class="uk-card-media-top">
+          <img src="https://via.placeholder.com/400x250?text=信義社區" alt="信義社區">
+        </div>
+        <div class="uk-card-body">
+          <h4 class="uk-card-title">信義社區</h4>
+          <p>信義計劃區核心｜交通便利｜環境清幽</p>
+        </div>
+    </div>
+  </a>
+</div>
+
+    <!-- 大安 -->
+    <div data-tag="大安">
+    <a href="https://laichiyung0920.github.io/runtai-dunpin.html" style="text-decoration: none; color: inherit;">
+      <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+        <div class="uk-card-media-top">
+          <img src="https://via.placeholder.com/400x250?text=大安社區" alt="大安社區">
+        </div>
+        <div class="uk-card-body">
+          <h4 class="uk-card-title">大安社區</h4>
+          <p>忠孝東路沿線｜鄰近捷運｜生活機能佳</p>
+        </div>
+    </div>
+  </a>
+</div>
+
+<div data-tag="松山">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div data-tag="松山">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div data-tag="松山">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div data-tag="松山">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div data-tag="松山">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div data-tag="中山">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div data-tag="大安">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div data-tag="中山">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div data-tag="大安">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div data-tag="中山">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div data-tag="大安">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+<div data-tag="中山">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+<div data-tag="信義">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div data-tag="松山">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div data-tag="中山">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div data-tag="信義">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div data-tag="大安">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div data-tag="信義">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div data-tag="中山">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div data-tag="松山">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div data-tag="大安">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div data-tag="信義">
+  <a href"https://laichiyung0920.github.io/張貼社區連結的地方.html" style="text-decoration: none; color: inherit;"> 
+    <div class="uk-card uk-card-default uk-card-hover uk-border-rounded">
+      <div class="uk-card-media-top">
+        <img src=""https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg圖片網址"" alt="社區名稱">
+      </div>
+      <div class="uk-card-body">
+        <h4 class="uk-card-title">社區名稱</h4>
+        <p>簡短描述｜完工年｜建設公司</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+  </div>
+</div>
+
+<!-- 頁腳 -->
+<footer>
+  © 2007 賴奇勇｜大師房屋 敦北民生加盟營業處
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.20/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.16.20/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>
