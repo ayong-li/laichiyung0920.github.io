@@ -227,13 +227,14 @@
   position: relative;
   display: inline-block;
 }
+ 
 .watermark-text {
-  position: absolute;
+  position: absolute;/* 浮水印*/
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgba(255, 255, 255, 0.4); /* 白色 + 透明度 */
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
   pointer-events: none;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
