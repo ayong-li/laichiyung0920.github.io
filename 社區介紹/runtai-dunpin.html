@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="專營台北市松山區｜民生社區、敦化北路、公教住宅，聯合二村、賴奇勇，買賣、房屋、查詢實價登錄、節稅、估價、繼承、避坑、防詐、豪宅、學區、仲介、國宅、軍宅">
+  <title>潤泰敦品｜社區介紹｜賴奇勇</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.20/css/uikit.min.css" />
+  <style>
+    body {
+      font-family: 'Microsoft JhengHei', sans-serif;
+    }
+    nav {
+  background-color: black;
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+    nav img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    nav .left {
+      display: flex;
+      align-items: center;
+    }
+    nav .right a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    nav .right input[type="search"] {
+      background-color: #cdb15b;
+      border: none;
+      padding: 5px;
+    }
+    .logo-section {
+      margin-top: 60px;
+      text-align: center;
+    }
+    h1 {
+      color: #866a13;
+      font-size: 28px;
+      text-align: center;
+    }
+    .contact-section {
+      display: flex;
+      align-items: center;
+      margin: 50px;
+    }
+    .contact-section img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+    }
+    .contact-info {
+      margin-left: 100px;
+      font-size: 18px;
+    }
+    .highlight-box {
+      background-color: #34586e;
+      color: #cdb15b;
+      padding: 20px;
+      margin: 150px 40px 40px;
+      font-size: 20px;
+    }
+    .uk-slider-items img {
+      border: 5px solid #eee;
+      transition: transform 0.3s;
+    }
+    .uk-slider-items img:hover {
+      transform: scale(1.02);
+    }
+    .center-title {
+      text-align: center;
+      font-size: 24px;
+      color: #9f1120;
+      margin: 40px 0;
+    }
+    .section {
+      padding: 40px;
+    }
+    .section h2 {
+      background-color: #34586e;
+      color: #cdb15b;
+      padding: 16px 24px;
+      margin: 0;
+      max-width: 100%;
+      font-size: 25px;
+      box-sizing: border-box;
+    }
+    .footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .highlight-box strong:hover {
+    font-size: 32px;
+    transition: font-size 0.5s ease;
+  }
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  nav .right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  .contact-section img {
+    margin-bottom: 20px;
+  }
+  .contact-info {
+    margin-left: 0;
+    text-align: center;
+  }
+  .highlight-box {
+    margin: 40px 10px;
+    font-size: 18px;
+    padding: 16px;
+  }
+@media (max-width: 768px) {
+  .contact-form form {
+    margin: 0 auto;
+  }
+}
+  .section {
+    padding: 20px;
+  }
+  .section h2 {
+    font-size: 20px;
+    padding: 12px;
+  }
+  .logo-section img,
+  .uk-slider-items img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .uk-slider-items {
+    height: auto !important;
+  }
+  .uk-slider-nav img {
+    width: 60px;
+  }
+  .section[style*="display: flex"] {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section[style*="display: flex"] img {
+    margin-bottom: 20px;
+  }
+}
+.uk-slider-nav > .uk-active img {
+  border-color: #ffbd59 !important;
+  box-shadow: 0 0 8px rgba(255, 189, 89, 0.8);
+  transform: scale(1.05);
+}
+@keyframes bounce {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+  
+.contact-form form {
+  text-align: center;  
+  background: #f9f9f9;
+  padding: 20px 24px;
+  max-width: 500px; /* ✅ 限制寬度 */
+  border-radius: 12px;
+  box-shadow: -10px 0 10px rgba(0,0,0,0.08);
+  border: 1px solid #ddd;
+}
+  .contact-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+  .contact-form textarea {
+    resize: vertical;
+  }
+  .contact-form button {
+  display: inline-block;  
+  background-color: #c69f2c;
+  color: white;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+  .contact-form button:hover {
+    background-color: #9e7d1d;
+  }    
+@media (max-width: 768px) {
+  .contact-form form {
+    margin: 0 auto;
+  }
+}
+</style>
+</head>
+<body>
+
+  <nav>
+    <div class="left">
+      <a href="index.html">
+        
+        <strong style="color:white; font-weight:bold;">賴奇勇-大師房屋</strong>
+      </a>
+    </div>
+    <div class="right">
+      <a href="index.html">首頁</a>
+      <a href="testimonials.html">客戶這樣說</a>
+      <a href="resume.html">自我介紹</a>
+      <a href="社區介紹.html">社區介紹</a>
+      <a href="realpricelogin.html">實價登錄</a>
+      <a href="買賣房注意事項.html">買賣房注意事項</a>
+      <a href="contact.html">地圖</a>
+      <input name="searchword" placeholder="搜尋" type="search" class="uk-search-input" title="搜尋 賴奇勇" style="width: 120px;">
+    </div>
+  </nav>
+
+  <div class="logo-section">
+    <img src="logo.png" alt="公司LOGO">
+  </div>
+
+<!-- 主內容 -->
+<div class="uk-container uk-margin-large-top uk-margin-large-bottom">
+<div class="uk-grid-large uk-grid-match " uk-grid>
+    
+
+    <!-- 左側：內容資訊 -->
+    <div class="uk-width-1-2@m"style="padding-left: 10px;">
+      <div class="uk-card uk-card-secondary uk-card-body uk-border-rounded">
+        <h2 class="uk-text-center">潤泰敦品</h2>
+        <ul class="uk-list uk-list-divider">
+          <li><div class="uk-h6 uk-float-left">📍 .&nbsp地址 :</div>&nbsp
+            <a href="https://www.google.com/maps?q=台北市松山區敦化北路155巷100弄12號" target="_blank">
+              松山區敦化北路155巷100弄2-12-16-1號
+              <img src="https://img.icons8.com/ios-filled/20/000000/google-maps-new.png" alt="地圖圖示" style="margin-left: 6px; vertical-align: middle;">
+            </a>
+          </li>
+          <li><div class="uk-h6 uk-float-left">📐 .&nbsp基地面積</div>&nbsp : 1461坪</li>
+          <li><div class="uk-h6 uk-float-left">🏠 .&nbsp坪數規劃</div>&nbsp : 69、119、139坪</li>
+          <li><div class="uk-h6 uk-float-left">🏢 .&nbsp樓層規劃</div>&nbsp : 17F/B3F</li>
+          <li><div class="uk-h6 uk-float-left">🧱 .&nbsp建築設計</div>&nbsp : 林泓祥</li>
+          <li><div class="uk-h6 uk-float-left">📊 .&nbsp公設比</div>&nbsp : 33%</li>
+          <li><div class="uk-h6 uk-float-left">👨‍👩‍👧‍👦 .&nbsp戶數</div>&nbsp : 71戶</li>
+          <li><div class="uk-h6 uk-float-left">🏗 .&nbsp建設公司</div>&nbsp : 潤泰創新國際</li>
+          <li><div class="uk-h6 uk-float-left">🗓 .&nbsp完工年份</div>&nbsp : 1999年</li>
+          <li><div class="uk-h6 uk-float-left">🧱 .&nbsp結構型式</div>&nbsp : RC（鋼筋混凝土）</li>
+          <li><div class="uk-h6 uk-float-left">🗓 .&nbsp單層戶數</div>&nbsp : 四戶</li>
+        </ul>
+      </div>
+    </div>
+
+   <!-- 右側：建築外觀 + 敘述 -->
+    <div class="uk-width-1-2@m uk-text-center"style="padding-right: 10px;">
+      <img 
+        src="https://ayong-li.github.io/laichiyung0920.github.io/潤泰敦品.jpg" 
+        alt="潤泰敦品 建築外觀" 
+        class="uk-border-rounded uk-box-shadow-small"
+        style="max-width: 100%; height: auto;"
+      >
+      <div class="uk-text-meta uk-margin-small-top" style="font-size: 16px;">
+▲ 【潤泰敦品】座落於台北市精華地段——敦化北路155巷100弄2號，鄰近民生東路，位處靜巷純住宅區，享有難得的生活寧靜與城市便利。基地面積達1461坪，為罕見的大面積完整住宅基地，由潤泰創新國際投資興建，著名建築師林泓祥操刀設計，展現豪宅新標竿。
+本案於1999年完工，規劃地上17層、地下3層，全案採RC鋼筋混凝土結構，總戶數71戶，坪數規劃為69坪、119坪及稀有139坪大戶，公設比約33%。外觀氣勢磅礴，門廳挑高大器，並結合歐式藝術花園、尊榮公共設施與高科技保全系統，全面升級居住品質。
+「潤泰敦品」是台灣少數純住宅大型基地之一，開創當代豪宅新典範，以大坪數、大尺度、大氣勢為三大核心，顛覆傳統高級住宅的設計思維，引領後來豪宅潮流走向。
+本案產品規劃分為大樓與別墅兩種形式，住戶素質極高。其中兩戶別墅據傳由前國民黨投資管理委員會主委劉泰英購得，另一戶則作為「李登輝台北辦公室」使用，由台灣綜合研究院購置。
+「潤泰敦品」，不只是建築，更是一座值得傳承的經典地標。
+</div>
+  </div>
+   </div>
+
+       <!-- 下方 Google 地圖嵌入區 -->
+<div class="uk-margin-large-top" style="margin-top: 60px;">
+  <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d379.9146047485786!2d121.55206781147031!3d25.055201128352582!2m3!
+    1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abe930b99fcf%3A0xf629626f1e18ccac!2zMTA15Y-w5YyX5biC5p2-5bGx5Y2A5pWm5YyW5YyX6LevMTU15be3MTAw5byEMTLomZ8!5e0!3m2!1szh-TW!2stw!4v1743251706679!5m2!1szh-TW!2stw" 
+    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    style="border:0; border-radius: 8px;"
+    allowfullscreen 
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">3
+  </iframe>
+<div class="uk-text-center uk-margin-small-top">
+  <a href="https://www.google.com/maps?q=105台北市松山區敦化北路155巷100弄12號" target="_blank" style="color: #007bff; text-decoration: underline; font-weight: bold;">
+    ➤ 顯示詳細地圖（開啟 Google 地圖）
+  </a>
+</div>
+</div>
+</div>
+  
+<!-- 三欄佈局 -->
+  <div style="display: flex; flex-wrap: wrap; gap: 24px;">
+    
+<!-- 聯絡資訊列 -->
+ <div class="section" style="display: flex; align-items: flex-start;" font-size: 20px;">
+    <img src="profile.jpg" width="400" height="400" style="border-radius: 50%; margin-right: 40px; object-fit: cover;">
+    <div>
+      <p>📞 想買房、賣屋、不確定怎麼開始？歡迎先聊聊！</p>
+      <p>📱 &nbsp賴奇勇&nbsp 📞<a href="tel:0920870278">0920-870-278</a></p> 
+      <p>🏠&nbsp 大師房屋敦北民生加盟營業處 副店長</p>
+      <p>📍 地址：<a href="https://www.google.com/maps?q=台北市松山區民生東路四段130號">台北市松山區民生東路四段130號(光復北路口)</a></p>
+      <p>📜 經紀人證號：102北市經經證字第02056號</p>
+      <p>📜 營業員證號：100登字170931號</p>
+      <p>🔗 <a href="https://line.me/ti/p/N0aCOzISyY" target="_blank">
+  <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" style="height: 28px; vertical-align: middle; margin-right: 12px; margin-top: 8px;">點擊加入我的LINE，一對一私訊快速回覆
+</a></p>
+    </div>
+  </div>
+<!-- 右：聯絡表單 -->
+  <div class="contact-form" style="flex: 2; min-width: 300px;">
+    <form>
+      <label for="name">稱呼</label>
+      <input type="text" id="name" name="name" placeholder="請輸入您的稱呼" required>
+
+      <label for="phone">電話 (必填)</label>
+      <input type="tel" id="phone" name="phone" placeholder="0912xxxxxx" required>
+
+      <label for="message">留言 (選填)</label>
+      <textarea id="message" name="message" rows="5" placeholder="您的需求或問題..."></textarea>
+
+      <button type="submit">傳送</button>
+    </form>
+  </div>
+
+</div>
+  <div id="visitor-counter" style="text-align: center; font-size: 16px; margin: 20px 0;"></div>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <div style="background-color: #000; color: white; text-align: center; padding: 20px;">© 2007 賴奇勇｜大師房屋 敦北民生加盟營業處</div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.20/js/uikit.min.js"></script>
+  <script>
+    const startDate = new Date('2007-03-01');
+    const today = new Date();
+    let years = today.getFullYear() - startDate.getFullYear();
+    const hasNotReachedAnniversary = today.getMonth() < 2 || (today.getMonth() === 2 && today.getDate() < 1);
+    if (hasNotReachedAnniversary) years--;
+    document.querySelectorAll('#experience-years').forEach(el => el.innerText = years + '年');
+  </script>
+  <!-- Google Analytics 分析程式碼可置於此 -->
+<a href="https://line.me/ti/p/N0aCOzISyY" target="_blank" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
+  <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入LINE" style="height: 60px; transition: transform 0.3s ease; animation: bounce 1s infinite alternate;">
+</a>
+<script>
+  const lineBtn = document.querySelector('a[href*="line.me"] img');
+  if (lineBtn) {
+    lineBtn.addEventListener('mouseover', () => lineBtn.style.transform = 'scale(1.1)');
+    lineBtn.addEventListener('mouseout', () => lineBtn.style.transform = 'scale(1)');
+  }
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const token = "https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png"; // ← 請放你的 LINE Notify 權杖
+    const text = `【新表單來信】\n稱呼：${name}\n電話：${phone}\n留言：${message}`;
+
+    fetch("https://notify-api.line.me/api/notify", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Authorization": "Bearer " + token,
+      },
+      body: "message=" + encodeURIComponent(text),
+    })
+    .then(res => {
+      if (res.ok) {
+        alert("✅ 表單送出成功，感謝您的留言！");
+        window.location.href = "thankyou.html"; // ← 成功轉跳頁面
+      } else {
+        alert("❌ 發送失敗，請稍後再試");
+      }
+    })
+    .catch(() => alert("❌ 系統異常，請稍後再試"));
+  });
+</script>
+</body>
+</html>
