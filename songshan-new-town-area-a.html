@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="賴奇勇, 大師房屋, 房仲, 台北房地產, 松山新城、介壽國中、民生國小、潤泰敦品、敦北翠苑, 房屋仲介, 民生社區">
+  <meta name="description" content="專營台北市松山區｜民生社區、松山新城、見安心、平安新城、敦化新城、敦化北路、公教住宅，聯合二村、賴奇勇，買賣、房屋、查詢實價登錄、節稅、估價、繼承、避坑、防詐、豪宅、學區、仲介、國宅、軍宅">
+  <title>松山新城甲區｜社區介紹｜賴奇勇</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.20/css/uikit.min.css" />
+  <style>
+    body {
+      font-family: 'Microsoft JhengHei', sans-serif;
+    }
+    nav {
+  background-color: black;
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+    nav img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    nav .left {
+      display: flex;
+      align-items: center;
+    }
+    nav .right a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    nav .right input[type="search"] {
+      background-color: #cdb15b;
+      border: none;
+      padding: 5px;
+    }
+    .logo-section {
+      margin-top: 60px;
+      text-align: center;
+    }
+    h1 {
+      color: #866a13;
+      font-size: 28px;
+      text-align: center;
+    }
+    .contact-section {
+      display: flex;
+      align-items: center;
+      margin: 50px;
+    }
+    .contact-section img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+    }
+    .contact-info {
+      margin-left: 100px;
+      font-size: 18px;
+    }
+    .highlight-box {
+      background-color: #34586e;
+      color: #cdb15b;
+      padding: 20px;
+      margin: 150px 40px 40px;
+      font-size: 20px;
+    }
+    .uk-slider-items img {
+      border: 5px solid #eee;
+      transition: transform 0.3s;
+    }
+    .uk-slider-items img:hover {
+      transform: scale(1.02);
+    }
+    .center-title {
+      text-align: center;
+      font-size: 24px;
+      color: #9f1120;
+      margin: 40px 0;
+    }
+    .section {
+      padding: 40px;
+    }
+    .section h2 {
+      background-color: #34586e;
+      color: #cdb15b;
+      padding: 16px 24px;
+      margin: 0;
+      max-width: 100%;
+      font-size: 25px;
+      box-sizing: border-box;
+    }
+    .footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .highlight-box strong:hover {
+    font-size: 32px;
+    transition: font-size 0.5s ease;
+  }
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  nav .right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  .contact-section img {
+    margin-bottom: 20px;
+  }
+  .contact-info {
+    margin-left: 0;
+    text-align: center;
+  }
+  .highlight-box {
+    margin: 40px 10px;
+    font-size: 18px;
+    padding: 16px;
+  }
+@media (max-width: 768px) {
+  .contact-form form {
+    margin: 0 auto;
+  }
+}
+  .section {
+    padding: 20px;
+  }
+  .section h2 {
+    font-size: 20px;
+    padding: 12px;
+  }
+  .logo-section img,
+  .uk-slider-items img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .uk-slider-items {
+    height: auto !important;
+  }
+  .uk-slider-nav img {
+    width: 60px;
+  }
+  .section[style*="display: flex"] {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section[style*="display: flex"] img {
+    margin-bottom: 20px;
+  }
+}
+.uk-slider-nav > .uk-active img {
+  border-color: #ffbd59 !important;
+  box-shadow: 0 0 8px rgba(255, 189, 89, 0.8);
+  transform: scale(1.05);
+}
+@keyframes bounce {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+  
+.contact-form form {
+  text-align: center;  
+  background: #f9f9f9;
+  padding: 20px 24px;
+  max-width: 500px; /* ✅ 限制寬度 */
+  border-radius: 12px;
+  box-shadow: -10px 0 10px rgba(0,0,0,0.08);
+  border: 1px solid #ddd;
+}
+  .contact-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+  .contact-form textarea {
+    resize: vertical;
+  }
+  .contact-form button {
+  display: inline-block;  
+  background-color: #c69f2c;
+  color: white;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+  .contact-form button:hover {
+    background-color: #9e7d1d;
+  }    
+@media (max-width: 768px) {
+  .contact-form form {
+    margin: 0 auto;
+  }
+}
+.watermark-wrapper {
+  position: relative;
+  display: inline-block;
+}
+ 
+.watermark-text {
+  position: absolute;/* 浮水印*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.4); /* 白色 + 透明度 */
+  font-size: 20px;
+  font-weight: bold;
+  pointer-events: none;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+  .section p, .section li {
+   font-size: 18px;
+   line-height: 1.8;
+   }
+</style>
+</head>
+<body>
+
+  <nav>
+    <div class="left">
+      <a href="index.html">
+        
+        <strong style="color:white; font-weight:bold;">賴奇勇-大師房屋</strong>
+      </a>
+    </div>
+    <div class="right">
+      <a href="index.html">首頁</a>
+      <a href="testimonials.html">客戶這樣說</a>
+      <a href="resume.html">自我介紹</a>
+      <a href="mansion.html">社區介紹</a>
+      <a href="realpricelogin.html">實價登錄</a>
+      <a href="買賣房注意事項.html">買賣房注意事項</a>
+      <a href="contact.html">地圖</a>
+      <input name="searchword" placeholder="搜尋" type="search" class="uk-search-input" title="搜尋 賴奇勇" style="width: 120px;">
+    </div>
+  </nav>
+
+  <div class="logo-section">
+    <img src="logo.png" alt="公司LOGO">
+  </div>
+
+<!-- 主內容 -->
+<div class="uk-container uk-margin-large-top uk-margin-large-bottom">
+<div class="uk-grid-large uk-grid-match " uk-grid>
+    
+
+    <!-- 左側：內容資訊 -->
+    <div class="uk-width-1-2@m"style="padding-left: 10px;">
+      <div class="uk-card uk-card-secondary uk-card-body uk-border-rounded">
+        <h2 class="uk-text-center">松山新城甲區</h2>
+        <ul class="uk-list uk-list-divider">
+          <li><div class="uk-h6 uk-float-left">📍 .&nbsp地址 :</div>&nbsp
+            <a href="https://www.google.com/maps?q=台北市松山區健康路35巷7號" target="_blank">
+              松山區光復北路210巷以南至健康路
+              <img src="https://img.icons8.com/ios-filled/20/000000/google-maps-new.png" alt="地圖圖示" style="margin-left: 6px; vertical-align: middle;">
+            </a>
+          </li>
+          <li><div class="uk-h6 uk-float-left">📐 .&nbsp基地面積</div>&nbsp : 約1120坪</li>
+          <li><div class="uk-h6 uk-float-left">🏠 .&nbsp坪數規劃</div>&nbsp : 32、35、41坪</li>
+          <li><div class="uk-h6 uk-float-left">🏢 .&nbsp樓層規劃</div>&nbsp : 10F、13F、18F/B2F</li>
+          <li><div class="uk-h6 uk-float-left">🧱 .&nbsp建築設計</div>&nbsp : 大宇建築師事務所</li>
+          <li><div class="uk-h6 uk-float-left">📊 .&nbsp公設比</div>&nbsp : 36%、40%</li>
+          <li><div class="uk-h6 uk-float-left">👨‍👩‍👧‍👦 .&nbsp戶數</div>&nbsp : 約1286戶</li>
+          <li><div class="uk-h6 uk-float-left">🏗 .&nbsp建設公司</div>&nbsp : 業聯營造</li>
+          <li><div class="uk-h6 uk-float-left">🗓 .&nbsp完工年份</div>&nbsp : 1998年</li>
+          <li><div class="uk-h6 uk-float-left">🧱 .&nbsp結構型式</div>&nbsp : RC（鋼筋混凝土）</li>
+          <li><div class="uk-h6 uk-float-left">🗓 .&nbsp單層戶數</div>&nbsp : 四戶</li>
+        </ul>
+      </div>
+    </div>
+
+   <!-- 右側：建築外觀 + 敘述 -->
+<div class="uk-width-1-2@m uk-text-center" style="padding-right: 10px;">
+  <!-- 輪播開始 -->
+  <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 4000">
+    <ul class="uk-slideshow-items">
+      <li>
+        <img src="https://ayong-li.github.io/laichiyung0920.github.io/松甲1.jpg" alt="松山新城甲區 建築外觀" class="uk-border-rounded uk-box-shadow-small" style="max-width: 100%; height: auto;" uk-cover>
+        <div class="watermark-text">賴奇勇 大師房屋</div>
+      </li>
+      <li>
+        <img src="https://ayong-li.github.io/laichiyung0920.github.io/松甲2.jpg" alt="松山新城甲區 建築外觀2" class="uk-border-rounded uk-box-shadow-small" style="max-width: 100%; height: auto;" uk-cover>
+        <div class="watermark-text">賴奇勇 大師房屋</div>
+      </li>
+      <li>
+        <img src="https://ayong-li.github.io/laichiyung0920.github.io/松甲3.jpg" alt="松山新城甲區 建築外觀2" class="uk-border-rounded uk-box-shadow-small" style="max-width: 100%; height: auto;" uk-cover>
+        <div class="watermark-text">賴奇勇 大師房屋</div>
+      </li>
+      <li>
+        <img src="https://ayong-li.github.io/laichiyung0920.github.io/松甲4.jpg" alt="松山新城甲區 建築外觀2" class="uk-border-rounded uk-box-shadow-small" style="max-width: 100%; height: auto;" uk-cover>
+        <div class="watermark-text">賴奇勇 大師房屋</div>
+      </li>
+      <li>
+        <img src="https://ayong-li.github.io/laichiyung0920.github.io/松乙5.jpg" alt="松山新城甲區 建築外觀2" class="uk-border-rounded uk-box-shadow-small" style="max-width: 100%; height: auto;" uk-cover>
+        <div class="watermark-text">賴奇勇 大師房屋</div>
+      </li>
+      <li>
+        <img src="https://ayong-li.github.io/laichiyung0920.github.io/松甲6.jpg" alt="松山新城甲區 建築外觀2" class="uk-border-rounded uk-box-shadow-small" style="max-width: 100%; height: auto;" uk-cover>
+        <div class="watermark-text">賴奇勇 大師房屋</div>
+      </li>
+      <li>
+        <img src="https://ayong-li.github.io/laichiyung0920.github.io/松甲7.jpg" alt="松山新城甲區 建築外觀2" class="uk-border-rounded uk-box-shadow-small" style="max-width: 100%; height: auto;" uk-cover>
+        <div class="watermark-text">賴奇勇 大師房屋</div>
+      </li>
+      <li>
+        <img src="https://ayong-li.github.io/laichiyung0920.github.io/松甲8.jpg" alt="松山新城甲區 建築外觀2" class="uk-border-rounded uk-box-shadow-small" style="max-width: 100%; height: auto;" uk-cover>
+        <div class="watermark-text">賴奇勇 大師房屋</div>
+      </li>
+      <li>
+        <img src="https://ayong-li.github.io/laichiyung0920.github.io/松甲9.jpg" alt="松山新城甲區 建築外觀2" class="uk-border-rounded uk-box-shadow-small" style="max-width: 100%; height: auto;" uk-cover>
+        <div class="watermark-text">賴奇勇 大師房屋</div>
+      </li>
+      <li>
+        <img src="https://ayong-li.github.io/laichiyung0920.github.io/松甲10.jpg" alt="松山新城甲區 建築外觀2" class="uk-border-rounded uk-box-shadow-small" style="max-width: 100%; height: auto;" uk-cover>
+        <div class="watermark-text">賴奇勇 大師房屋</div>
+      </li>
+      <li>
+        <img src="https://ayong-li.github.io/laichiyung0920.github.io/松甲11.jpg" alt="松山新城甲區 建築外觀2" class="uk-border-rounded uk-box-shadow-small" style="max-width: 100%; height: auto;" uk-cover>
+        <div class="watermark-text">賴奇勇 大師房屋</div>
+      </li>
+      <li>
+        <img src="https://ayong-li.github.io/laichiyung0920.github.io/松甲12.jpg" alt="松山新城甲區 建築外觀2" class="uk-border-rounded uk-box-shadow-small" style="max-width: 100%; height: auto;" uk-cover>
+        <div class="watermark-text">賴奇勇 大師房屋</div>
+      </li>
+      <li>
+        <img src="https://ayong-li.github.io/laichiyung0920.github.io/松甲13.jpg" alt="松山新城甲區 建築外觀2" class="uk-border-rounded uk-box-shadow-small" style="max-width: 100%; height: auto;" uk-cover>
+        <div class="watermark-text">賴奇勇 大師房屋</div>
+      </li>
+       </ul>
+
+    <!-- 左右切換箭頭 -->
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+  </div>
+      <div class="uk-text-meta uk-margin-small-top" style="font-size: 18px;">
+▲【松山新城甲區】——松山區經典社區代表
+【松山新城甲區】位於台北市松山區光復北路190巷以南，前身為「空軍松山新村」，始建於民國40年代，原為空軍官士眷屬的眷村。隨著城市發展，配合政府「老舊眷村改建」政策，居民積極參與改建行動，最終於民國86年（1997年）完成重建，蛻變為現今規模完整、生活機能成熟的松山新城甲區。
+社區總戶數達764戶，屋齡約28年，基地廣闊、格局多元，建築樓高約14至18層，採RC鋼筋混凝土結構，配置坡道平面車位，使用便利。坪數涵蓋約15坪小套房、36坪二房至60多坪大三房，無論是首購、換屋或資產配置皆宜。
+▌核心優勢
+✅ 地理位置優越 : 社區座落於健康路靜巷內，遠離主幹道車流，鬧中取靜。步行可達捷運台北小巨蛋站、南京三民站，交通便利。南鄰南京東路商圈、北近民生東路，鄰近松山機場與松山車站，無論市區通勤或跨縣市移動都十分方便。
+✅ 學區優勢明確 : 社區位於明星學區內，步行即可到達民生國小與介壽國中，上下學路線安全，設有導護家長，孩童可安心自行通學。周邊補習班與才藝機構密集，教育資源豐富，深受家庭族群喜愛。
+✅ 生活機能完善 : 社區內設有龍城市場、純青托兒所、籃球場、網球場等設施，生活機能自給自足；鄰近長庚醫院、空軍松山醫院等醫療資源，為居民健康加分。
+✅ 綠意環境宜人 : 社區擁有大面積中庭花園與植栽空間，綠化率高，並採人車分流設計，居住環境寧靜、安全、舒適，是市中心中難得的綠意社區。
+✅ 穩定的社區氛圍 : 住戶多為長期自住族群，鄰里關係單純、和睦，物業管理到位，是許多家庭「一住十年以上」的安心選擇。
+【松山新城甲區】，不僅是一個社區，更是松山區城市發展記憶的延續。結合地段、學區、環境與社區品質，是市中心中難得的生活綠洲與置產首選。
+</div>
+  </div>
+   </div>
+
+       <!-- 下方 Google 地圖嵌入區 -->
+<div class="uk-margin-large-top" style="margin-top: 60px;">
+  <iframe 
+  src=""https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.41606034675!2d121.55190227595672!3d25.05388363748954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+        1s0x3442abebde003a1b%3A0xed6c660fad60911f!2zMTA15Y-w5YyX5biC5p2-5bGx5Y2A5YGl5bq36LevMzXlt7c36Jmf!5e0!3m2!1szh-TW!2stw!4v1743592554810!5m2!1szh-TW!2stw" width="100%" height="350" 
+style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    allowfullscreen 
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">3
+  </iframe>
+<div class="uk-text-center uk-margin-small-top">
+  <a href="https://www.google.com/maps?q=105台北市松山區健康路35巷7號" target="_blank" style="color: #007bff; text-decoration: underline; font-weight: bold;">
+    ➤ 顯示詳細地圖（開啟 Google 地圖）
+  </a>
+</div>
+</div>
+</div>
+  
+<!-- 三欄佈局 -->
+  <div style="display: flex; flex-wrap: wrap; gap: 24px;">
+    
+<!-- 聯絡資訊列 -->
+ <div class="section" style="display: flex; align-items: flex-start;" font-size: 20px;">
+    <img src="profile.jpg" width="400" height="400" style="border-radius: 50%; margin-right: 40px; object-fit: cover;">
+    <div>
+      <p>📞 想買房、賣屋、不確定怎麼開始？歡迎先聊聊！</p>
+      <p>📱 &nbsp賴奇勇&nbsp 📞<a href="tel:0920870278">0920-870-278</a></p> 
+      <p>🏠&nbsp 大師房屋敦北民生加盟營業處 副店長</p>
+      <p>📍 地址：<a href="https://www.google.com/maps?q=台北市松山區民生東路四段130號">台北市松山區民生東路四段130號(光復北路口)</a></p>
+      <p>📜 經紀人證號：102北市經經證字第02056號</p>
+      <p>📜 營業員證號：100登字170931號</p>
+      <p>🔗 <a href="https://line.me/ti/p/N0aCOzISyY" target="_blank">
+  <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" style="height: 28px; vertical-align: middle; margin-right: 12px; margin-top: 8px;">點擊加入我的LINE，一對一私訊快速回覆
+</a></p>
+    </div>
+  </div>
+<!-- 右：聯絡表單 -->
+  <div class="contact-form" style="flex: 2; min-width: 300px;">
+    <form>
+      <label for="name">稱呼</label>
+      <input type="text" id="name" name="name" placeholder="請輸入您的稱呼" required>
+
+      <label for="phone">電話 (必填)</label>
+      <input type="tel" id="phone" name="phone" placeholder="0912xxxxxx" required>
+
+      <label for="message">留言 (選填)</label>
+      <textarea id="message" name="message" rows="5" placeholder="您的需求或問題..."></textarea>
+
+      <button type="submit">傳送</button>
+    </form>
+  </div>
+
+</div>
+  <div id="visitor-counter" style="text-align: center; font-size: 16px; margin: 20px 0;"></div>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <div style="background-color: #000; color: white; text-align: center; padding: 20px;">© 2007 賴奇勇｜大師房屋 敦北民生加盟營業處</div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.16.20/js/uikit.min.js"></script>
+  <script>
+    const startDate = new Date('2007-03-01');
+    const today = new Date();
+    let years = today.getFullYear() - startDate.getFullYear();
+    const hasNotReachedAnniversary = today.getMonth() < 2 || (today.getMonth() === 2 && today.getDate() < 1);
+    if (hasNotReachedAnniversary) years--;
+    document.querySelectorAll('#experience-years').forEach(el => el.innerText = years + '年');
+  </script>
+  <!-- Google Analytics 分析程式碼可置於此 -->
+<a href="https://line.me/ti/p/N0aCOzISyY" target="_blank" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
+  <img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入LINE" style="height: 60px; transition: transform 0.3s ease; animation: bounce 1s infinite alternate;">
+</a>
+<script>
+  const lineBtn = document.querySelector('a[href*="line.me"] img');
+  if (lineBtn) {
+    lineBtn.addEventListener('mouseover', () => lineBtn.style.transform = 'scale(1.1)');
+    lineBtn.addEventListener('mouseout', () => lineBtn.style.transform = 'scale(1)');
+  }
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const token = "https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png"; // ← 請放你的 LINE Notify 權杖
+    const text = `【新表單來信】\n稱呼：${name}\n電話：${phone}\n留言：${message}`;
+
+    fetch("https://notify-api.line.me/api/notify", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Authorization": "Bearer " + token,
+      },
+      body: "message=" + encodeURIComponent(text),
+    })
+    .then(res => {
+      if (res.ok) {
+        alert("✅ 表單送出成功，感謝您的留言！");
+        window.location.href = "thankyou.html"; // ← 成功轉跳頁面
+      } else {
+        alert("❌ 發送失敗，請稍後再試");
+      }
+    })
+    .catch(() => alert("❌ 系統異常，請稍後再試"));
+  });
+</script>
+</body>
+</html>
