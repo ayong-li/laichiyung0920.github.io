@@ -245,6 +245,7 @@
    line-height: 1.8;
    }
 </style>
+  <link rel="stylesheet" href="mortgage-calculator.css">
 </head>
 <body>
 
@@ -261,6 +262,7 @@
       <a href="resume.html">自我介紹</a>
       <a href="mansion.html">社區介紹</a>
       <a href="realpricelogin.html">實價登錄</a>
+      <a href="mortgage.html">房貸試算</a>
       <a href="買賣房注意事項.html">買賣房注意事項</a>
       <a href="contact.html">地圖</a>
       <input name="searchword" placeholder="搜尋" type="search" class="uk-search-input" title="搜尋 賴奇勇" style="width: 120px;">
@@ -399,6 +401,14 @@
 </div>
 </div>
   
+<!-- 房貸試算 -->
+<div class="section">
+  <h2>💰 房貸試算｜松山新城乙區</h2>
+  <div style="margin-top: 20px;">
+    <div data-mortgage-calc data-mode="compact" data-name="松山新城乙區" data-price="2500"></div>
+  </div>
+</div>
+
 <!-- 三欄佈局 -->
   <div style="display: flex; flex-wrap: wrap; gap: 24px;">
     
@@ -488,5 +498,6 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     .catch(() => alert("❌ 系統異常，請稍後再試"));
   });
 </script>
+<script src="mortgage-calculator.js"></script>
 </body>
 </html>
